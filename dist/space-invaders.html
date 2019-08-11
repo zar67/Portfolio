@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/6347b4c2d8.js"></script>
+    <title>Portfolio | Zoe Rowbotham</title>
+</head>
+<body>
+    <header>
+        <h1><a class="header-name" href="index.html">Zoe Rowbotham</a></h1>
+        <nav class="menu">
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <i class="fas fa-address-card fa-x2 nav-image"></i>
+                    <a class="nav-link" href="#">About</a></li>
+                <li class="nav-item">
+                    <i class="fas fa-graduation-cap fa-x2 nav-image"></i>
+                    <a  class="nav-link" href="#">Student Projects</a></li>
+                <li class="nav-item">
+                    <i class="fas fa-gamepad fa-x2 nav-image"></i>
+                    <a  class="nav-link" href="#">Personal Work</a></li>
+                <li class="nav-item">
+                    <i class="fas fa-pen-square fa-x2 nav-image"></i>
+                    <a  class="nav-link" href="#">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="project-page-overview">
+        <div class="container">
+            <div class="project-page-main">
+                <h1 class="project-page-title">Space Invaders</h1>
+
+                <table class="project-page-features">
+                    <tr>
+                        <th>Status: </th>
+                        <td>Finished</td>
+                    </tr>
+                    <tr>
+                        <th>Software Used: </th>
+                        <td>CLion, GitKraken, GitHub</td>
+                    </tr>
+                    <tr>
+                        <th>Languages Used:</th>
+                        <td>C++</td>
+                    </tr>
+                    <tr>
+                        <th>Textures:</th>
+                        <td><a href="https://www.kenney.nl/" target="_blank">Kenney Space Shooter Redux Game Assets</a></td>
+                    </tr>
+                    <tr>
+                        <th>Itch.io Page:</th>
+                        <td><a href="https://zoerowbotham.itch.io/spaceinvaders" target="_blank">Zoe Rowbotham - Space Invaders</a></td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="project-page-description">
+                <p>Space Invaders is a small game recreation I made as part of my first year in order to help me learn C++. In the game, alien ships move downwards towards tha player. In order to win the game, the player has to shoot all of the ships. However, if the ships get to close or the player gets shot, you lose and Earth is taken over by aliens...</p>
+            </div>
+            <div class="project-page-media">
+                <video class="portrait" src="videos/Space Invaders/space-invaders-normal.mp4" height="800px" loop autoplay>
+                    Your browser does not support the video tag.
+                </video>
+                <img src="images/Space Invaders/space-invaders-normal.jpg" alt="Space invaders game with aliens moving down and player shooting">
+                <img src="images/Space Invaders/space-invaders-lost.jpg" alt="Space invaders game where the player has been shot and lost the game">
+                <p class="project-page-media-comment">As part of this project, I experimented with different trajectories of the aliens. The main ones were the curves (quadratic) trajectory and the sin curve. These can be seen below.</p>
+                <video class="portrait side-by-side" src="videos/Space Invaders/space-invaders-quadratic-movement.mp4" height="800px" loop autoplay>
+                    Your browser does not support the video tag.
+                </video>
+                <video class="portrait side-by-side" src="videos/Space Invaders/space-invaders-sine-movement.mp4" height="800px" loop autoplay>
+                    Your browser does not support the video tag.
+                </video>
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-contact">
+            <i class="fas fa-envelope-square fa-2x"></i>
+            <p>Send me an email: zoerowbotham1@gmail.com</p>
+        </div>
+        <div class="footer-copyright">
+            <p>Zoe Rowbotham - Game Programmer - Portfolio - 2019</p>
+        </div>
+    </footer>
+</body>
+</html>
