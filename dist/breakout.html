@@ -10,21 +10,21 @@
 </head>
 <body>
     <header>
-        <h1><a class="header-name" href="index.html">Zoe Rowbotham</a></h1>
+        <h1><a class="header-name scroll-link" href="index.html#nav-scroll-name">Zoe Rowbotham</a></h1>
         <nav class="menu">
             <ul class="menu-nav">
                 <li class="nav-item">
                     <i class="fas fa-address-card fa-x2 nav-image"></i>
-                    <a class="nav-link" href="#">About</a></li>
+                    <a class="nav-link scroll-link" href="index.html#nav-scroll-about">About</a></li>
                 <li class="nav-item">
                     <i class="fas fa-graduation-cap fa-x2 nav-image"></i>
-                    <a  class="nav-link" href="#">Student Projects</a></li>
+                    <a  class="nav-link scroll-link" href="index.html#nav-scroll-student">Student Projects</a></li>
                 <li class="nav-item">
                     <i class="fas fa-gamepad fa-x2 nav-image"></i>
-                    <a  class="nav-link" href="#">Personal Work</a></li>
-                <li class="nav-item">
+                    <a  class="nav-link scroll-link" href="index.html#nav-scroll-personal">Personal Work</a></li>
+                <li class="nav-item cv">
                     <i class="fas fa-pen-square fa-x2 nav-image"></i>
-                    <a  class="nav-link" href="#">CV</a></li>
+                    <a  class="nav-link scroll-link" href="Zoe Rowbotham - CV.pdf" target="_blank" download="">CV <span>PDF Download</span></a></li>
             </ul>
         </nav>
     </header>
@@ -53,13 +53,13 @@
                     </tr>
                     <tr>
                         <th>Itch.io Page:</th>
-                        <td><a href="https://zoerowbotham.itch.io/breakout" target="_blank">Zoe Rowbotham - Breakout</a></td>
+                        <td><a href="https://zoerowbotham.itch.io/block-breaker" target="_blank">Zoe Rowbotham - Block Breaker</a></td>
                     </tr>
                 </table>
             </div>
             
             <div class="project-page-description">
-                <p>Breakout is a small game recreation I made as part of my first year in order to help me learn C++ and the OpenGL Game Framework used in my first year. The game has blocks which when destroyed will give the player points. Special coloured blocks will release power ups that allows the player to shoot bullets for a limited time.</p>
+                <p>Breakout is a small game recreation I made as part of my first year in order to help me learn C++ and the OpenGL Game Framework used in my first year. The game has blocks which when destroyed will give the player points. Blocks are randomly coloured and some will release power ups that allows the player to shoot bullets for a limited time.</p>
                 <p>At random points throughout the game, gems will fall from the top to give bonus points. When the ball falls below the paddle, you lose a life.</p>
             </div>
 
@@ -67,9 +67,10 @@
                 <video class="portrait" src="videos/Breakout/breakout-cover.mp4" height="800px" loop autoplay>
                     Your browser does not support the video tag.
                 </video>
-                <p class="project-page-media-comment">When the purple bricks are hit, a green power up falls from them. If the player manages to collect the power up (by colliding with it) then they will be able to shoot little stars at the blocks in order to destroy them, as well as the ball. This game can get quite hectic quickly with the ball, shots, gems and power-ups all moving around the screen.</p>
-                <img src="images/Breakout/breakout-menu.jpg" alt="Breakout game menu">
-                <img src="images/Breakout/breakout-game.jpg" alt="breakout game with blocks a paddle and a ball moving around">
+                <p class="project-page-media-comment">When certain bricks are hit, a star shaped power up falls from them. If the player manages to collect the power up (by colliding with it) then they will be able to shoot bullets at the blocks in order to destroy them, as well as the ball. This game can get quite hectic quickly with the ball, shots, gems and power-ups all moving around the screen.</p>
+                <img src="images/Breakout/breakout-menu.jpg" alt="block breaker game menu">
+                <img src="images/Breakout/breakout-game.jpg" alt="block breaker game with blocks a paddle and a ball moving around">
+                <img src="images/Breakout/breakout-level.jpg" alt="block breaker second level with blocks a paddle and a ball moving around">
                 </video>
             </div>
         </div>
@@ -77,11 +78,11 @@
 
     <footer>
         <div class="footer-contact">
-            <img src="images/email-icon.png" alt="Email Icon" width="30px">
+            <i class="fas fa-envelope-square fa-2x"></i>
             <p>Send me an email: zoerowbotham1@gmail.com</p>
         </div>
         <div class="footer-copyright">
-            <p>Zoe Rowbotham - Game Programmer - Portfolio - 2019</p>
+            <p>Zoe Rowbotham | Game Programmer | Portfolio | &copy; 2019</p>
         </div>
     </footer>
 </body>
