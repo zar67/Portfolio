@@ -219,7 +219,8 @@ header {
     width: 55%;
     display: block;
     margin: auto;
-    padding-top: 58px; }
+    padding-top: 58px;
+    border: none; }
 
 section {
   display: block;
