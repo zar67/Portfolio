@@ -25,14 +25,13 @@ section {
             text-align: left;
 
             a {
-                color: #fff;
+                color: $text-emphasis-colour;
                 text-decoration: none;
                 font-style: italic;
             }
 
             a:hover {
-                color: $text-emphasis-colour;
-                @include easeOut();
+                font-weight: bold;
             }
         }
     }

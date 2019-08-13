@@ -22,12 +22,11 @@ section .project-page-main {
     margin: 0 25% 20px 35%;
     text-align: left; }
     section .project-page-main .project-page-features a {
-      color: #fff;
+      color: #F7BE15;
       text-decoration: none;
       font-style: italic; }
     section .project-page-main .project-page-features a:hover {
-      color: #F7BE15;
-      transition: all 0.5s ease-out; }
+      font-weight: bold; }
 
 section .project-page-description {
   width: 80%;
