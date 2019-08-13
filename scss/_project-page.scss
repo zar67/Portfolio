@@ -1,8 +1,4 @@
 
-$main-colour: #293462;
-$secondary-colour: #008089;
-$text-emphasis-colour: #F7BE15;
-
 section {
     &.project-page-overview {
         padding-top: 58px;
@@ -24,7 +20,7 @@ section {
         }
 
         .project-page-features {
-            width: 50%;
+            width: 60%;
             margin: 0 25% 20px 35%;
             text-align: left;
 
@@ -41,7 +37,7 @@ section {
     }
 
     .project-page-description {
-        width: 60%;
+        width: 80%;
         margin: auto;
     }
 
@@ -80,7 +76,7 @@ section {
     }
 
     .project-page-media-comment {
-        width: 60%;
+        width: 80%;
         margin: 20px auto;
     }
 }

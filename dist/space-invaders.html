@@ -14,78 +14,85 @@
         <nav class="menu">
             <ul class="menu-nav">
                 <li class="nav-item">
-                    <i class="fas fa-address-card fa-x2 nav-image"></i>
-                    <a class="nav-link scroll-link" href="index.html#nav-scroll-about">About</a></li>
+                    <a class="nav-link scroll-link" href="index.html#nav-scroll-about"><i class="fas fa-address-card fa-x2 nav-image"></i>
+                       <span class="nav-text">About</span></a>
+                </li>
                 <li class="nav-item">
-                    <i class="fas fa-graduation-cap fa-x2 nav-image"></i>
-                    <a  class="nav-link scroll-link" href="index.html#nav-scroll-student">Student Projects</a></li>
+                    <a  class="nav-link scroll-link" href="index.html#nav-scroll-student"><i class="fas fa-graduation-cap fa-x2 nav-image"></i>
+                        <span class="nav-text">Student Projects</span></a>
+                </li>
                 <li class="nav-item">
-                    <i class="fas fa-gamepad fa-x2 nav-image"></i>
-                    <a  class="nav-link scroll-link" href="index.html#nav-scroll-personal">Personal Work</a></li>
+                    <a  class="nav-link scroll-link" href="index.html#nav-scroll-personal"><i class="fas fa-gamepad fa-x2 nav-image"></i>
+                        <span class="nav-text">Personal Work</span></a>
+                </li>
                 <li class="nav-item cv">
-                    <i class="fas fa-pen-square fa-x2 nav-image"></i>
-                    <a  class="nav-link scroll-link" href="Zoe Rowbotham - CV.pdf" target="_blank" download="">CV <span>PDF Download</span></a></li>
+                    <a class="nav-link scroll-link" href="Zoe Rowbotham - CV.pdf" target="_blank"><i class="fas fa-pen-square fa-x2 nav-image"></i>
+                        <span class="nav-text">CV <span class="CV-extra">PDF Download</span></span></a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <section class="project-page-overview">
-        <div class="container">
-            <div class="project-page-main">
-                <h1 class="project-page-title">Space Invaders</h1>
+    <section class="project-page">
+        <section class="project-page-overview">
+            <div class="container">
+                <div class="project-page-main">
+                    <h1 class="project-page-title">Space Invaders</h1>
 
-                <table class="project-page-features">
-                    <tr>
-                        <th>Status: </th>
-                        <td>Finished</td>
-                    </tr>
-                    <tr>
-                        <th>Software Used: </th>
-                        <td>CLion, GitKraken, GitHub</td>
-                    </tr>
-                    <tr>
-                        <th>Languages Used:</th>
-                        <td>C++</td>
-                    </tr>
-                    <tr>
-                        <th>Textures:</th>
-                        <td><a href="https://www.kenney.nl/" target="_blank">Kenney Space Shooter Redux Game Assets</a></td>
-                    </tr>
-                    <tr>
-                        <th>Itch.io Page:</th>
-                        <td><a href="https://zoerowbotham.itch.io/spaceinvaders" target="_blank">Zoe Rowbotham - Space Invaders</a></td>
-                    </tr>
-                </table>
+                    <table class="project-page-features">
+                        <tr>
+                            <th>Status: </th>
+                            <td>Finished</td>
+                        </tr>
+                        <tr>
+                            <th>Software Used: </th>
+                            <td>CLion, GitKraken, GitHub</td>
+                        </tr>
+                        <tr>
+                            <th>Languages Used:</th>
+                            <td>C++</td>
+                        </tr>
+                        <tr>
+                            <th>Textures:</th>
+                            <td><a href="https://www.kenney.nl/" target="_blank">Kenney</a></td>
+                        </tr>
+                        <tr>
+                            <th>Itch.io Page:</th>
+                            <td><a href="https://zoerowbotham.itch.io/spaceinvaders" target="_blank">Space Invaders</a></td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="project-page-description">
+                    <p>Space Invaders is a small game recreation I made as part of my first year in order to help me learn C++. In the game, alien ships move downwards towards tha player. In order to win the game, the player has to shoot all of the ships. However, if the ships get to close or the player gets shot, you lose and Earth is taken over by aliens...</p>
+                </div>
+                <div class="project-page-media">
+                    <video class="portrait" src="videos/Space Invaders/space-invaders-normal.mp4" height="800px" loop autoplay>
+                        Your browser does not support the video tag.
+                    </video>
+                    <img src="images/Space Invaders/space-invaders-normal.jpg" alt="Space invaders game with aliens moving down and player shooting">
+                    <img src="images/Space Invaders/space-invaders-lost.jpg" alt="Space invaders game where the player has been shot and lost the game">
+                    <p class="project-page-media-comment">As part of this project, I experimented with different trajectories of the aliens. The main ones were the curves (quadratic) trajectory and the sin curve. These can be seen below.</p>
+                    <video class="portrait side-by-side" src="videos/Space Invaders/space-invaders-quadratic-movement.mp4" height="800px" loop autoplay>
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="portrait side-by-side" src="videos/Space Invaders/space-invaders-sine-movement.mp4" height="800px" loop autoplay>
+                        Your browser does not support the video tag.
+                    </video>
+                    </video>
+                </div>
             </div>
-            
-            <div class="project-page-description">
-                <p>Space Invaders is a small game recreation I made as part of my first year in order to help me learn C++. In the game, alien ships move downwards towards tha player. In order to win the game, the player has to shoot all of the ships. However, if the ships get to close or the player gets shot, you lose and Earth is taken over by aliens...</p>
-            </div>
-            <div class="project-page-media">
-                <video class="portrait" src="videos/Space Invaders/space-invaders-normal.mp4" height="800px" loop autoplay>
-                    Your browser does not support the video tag.
-                </video>
-                <img src="images/Space Invaders/space-invaders-normal.jpg" alt="Space invaders game with aliens moving down and player shooting">
-                <img src="images/Space Invaders/space-invaders-lost.jpg" alt="Space invaders game where the player has been shot and lost the game">
-                <p class="project-page-media-comment">As part of this project, I experimented with different trajectories of the aliens. The main ones were the curves (quadratic) trajectory and the sin curve. These can be seen below.</p>
-                <video class="portrait side-by-side" src="videos/Space Invaders/space-invaders-quadratic-movement.mp4" height="800px" loop autoplay>
-                    Your browser does not support the video tag.
-                </video>
-                <video class="portrait side-by-side" src="videos/Space Invaders/space-invaders-sine-movement.mp4" height="800px" loop autoplay>
-                    Your browser does not support the video tag.
-                </video>
-                </video>
-            </div>
-        </div>
+        </section>
     </section>
-
+    
     <footer>
         <div class="footer-contact">
-            <i class="fas fa-envelope-square fa-2x"></i>
-            <p>Send me an email: zoerowbotham1@gmail.com</p>
+            <a class="footer-link" href="https://www.linkedin.com/in/zoe-rowbotham/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a class="footer-link" href="mailto:zoerowbotham1@gmail.com?" target="_blank"><i class="fas fa-envelope-square fa-2x"></i></a>
+            <p>zoerowbotham1@gmail.com</p>
         </div>
         <div class="footer-copyright">
-            <p>Zoe Rowbotham - Game Programmer - Portfolio - 2019</p>
+            <p><span class="copright-small">Zoe Rowbotham <span class="copright-medium"><span class="copright-large">| Game Programmer </span>| Portfolio </span>|</span> &copy; 2019</p>
         </div>
     </footer>
 </body>
