@@ -150,14 +150,6 @@ section .project-page-media-comment {
   footer .footer-copyright .copright-small, footer .footer-contact p {
     display: none; } }
 
-video {
-  display: block;
-  width: 800px;
-  height: auto;
-  margin: 20px auto;
-  border: 3px solid #fff;
-  border-radius: 20px; }
-
 * {
   box-sizing: border-box;
   margin: 0;
