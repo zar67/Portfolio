@@ -207,3 +207,77 @@ footer {
         @include easeOut();
     }
 }
+
+section {
+    .policy-section-title {
+        margin-bottom: 20px;
+        font-weight: 100px;
+        padding: 10px;
+        color: $text-emphasis-colour;
+        background: lighten($main-colour, 2.5);
+        border-radius: 10px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    li.policy-reasons {
+        padding: 0 0 6px 0;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0 0 20px 6px;
+    }
+
+    a {
+        color: $text-emphasis-colour;
+        text-decoration: none;
+        font-style: italic;
+    }
+
+    a:hover {
+        font-weight: bold;
+    }
+
+    .project-page-description {
+        width: 80%;
+        margin: auto;
+    }
+
+    .project-page-media {
+        video {
+            display: block;
+            width: 800px;
+            height: auto;
+            margin: 20px auto;
+            padding: 0;
+            border: 3px solid #fff;
+            border-radius: 20px;
+        }
+
+        video.portrait {
+            width: 400px;
+        }
+
+        video.side-by-side {
+            display: inline-block;
+            margin: 10px 20px;
+        }
+
+        img {
+            width: 450px;
+            margin: 10px 15px;
+            border: 3px solid #fff;
+            border-radius: 20px;
+        }
+
+        img.portrait {
+            width: 400px;
+        }
+    }
+
+    .project-page-media-comment {
+        width: 80%;
+        margin: 20px auto;
+    }
+}
