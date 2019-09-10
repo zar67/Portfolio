@@ -46,26 +46,6 @@
             width: 80%;
             margin: 0 10% 20px 20%;
         }
-
-        video {
-            width: 600px;
-        }
-
-        video.portrait {
-            width: 300px;
-        }
-        
-        video.side-by-side {
-            width: 250px;
-        }
-
-        img {
-            width: 400px;
-        }
-        
-        img.portrait {
-            width: 300px;
-        }
     }
 
     footer {
@@ -124,14 +104,6 @@
             width: 95%;
             margin: 0 10% 20px 10%;
         }
-
-        video {
-            width: 400px;
-        }
-
-        img {
-            width: 400px;
-        }
     }
 
     footer {
@@ -162,10 +134,6 @@
         .project-page-main .project-page-features {
             width: 100%;
             margin: 0 0% 20px 5%;
-        }
-
-        video, video.portrait, img, img.portrait {
-            width: 90%;
         }
     }
 

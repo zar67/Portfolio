@@ -44,7 +44,7 @@ section {
     .project-page-media {
         video {
             display: block;
-            width: 800px;
+            max-width: 90%;
             height: auto;
             margin: 20px auto;
             padding: 0;
@@ -53,7 +53,7 @@ section {
         }
 
         video.portrait {
-            width: 400px;
+            max-width: 90%;
         }
 
         video.side-by-side {
@@ -62,14 +62,14 @@ section {
         }
 
         img {
-            width: 450px;
+            max-width: 90%;
             margin: 10px 15px;
             border: 3px solid #fff;
             border-radius: 20px;
         }
 
         img.portrait {
-            width: 400px;
+            max-width: 90%;
         }
     }
 

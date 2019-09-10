@@ -34,7 +34,7 @@ section .project-page-description {
 
 section .project-page-media video {
   display: block;
-  width: 800px;
+  max-width: 90%;
   height: auto;
   margin: 20px auto;
   padding: 0;
@@ -42,20 +42,20 @@ section .project-page-media video {
   border-radius: 20px; }
 
 section .project-page-media video.portrait {
-  width: 400px; }
+  max-width: 90%; }
 
 section .project-page-media video.side-by-side {
   display: inline-block;
   margin: 10px 20px; }
 
 section .project-page-media img {
-  width: 450px;
+  max-width: 90%;
   margin: 10px 15px;
   border: 3px solid #fff;
   border-radius: 20px; }
 
 section .project-page-media img.portrait {
-  width: 400px; }
+  max-width: 90%; }
 
 section .project-page-media-comment {
   width: 80%;
@@ -86,16 +86,6 @@ section .project-page-media-comment {
   section.project-page .project-page-main .project-page-features {
     width: 80%;
     margin: 0 10% 20px 20%; }
-  section.project-page video {
-    width: 600px; }
-  section.project-page video.portrait {
-    width: 300px; }
-  section.project-page video.side-by-side {
-    width: 250px; }
-  section.project-page img {
-    width: 400px; }
-  section.project-page img.portrait {
-    width: 300px; }
   footer .footer-copyright .copright-large, footer .footer-contact p {
     display: none; } }
 
@@ -125,10 +115,6 @@ section .project-page-media-comment {
   section.project-page .project-page-main .project-page-features {
     width: 95%;
     margin: 0 10% 20px 10%; }
-  section.project-page video {
-    width: 400px; }
-  section.project-page img {
-    width: 400px; }
   footer {
     min-height: 40px; }
     footer .footer-copyright .copright-small, footer .footer-contact p {
@@ -145,8 +131,6 @@ section .project-page-media-comment {
   section.project-page .project-page-main .project-page-features {
     width: 100%;
     margin: 0 0% 20px 5%; }
-  section.project-page video, section.project-page video.portrait, section.project-page img, section.project-page img.portrait {
-    width: 90%; }
   footer .footer-copyright .copright-small, footer .footer-contact p {
     display: none; } }
 
