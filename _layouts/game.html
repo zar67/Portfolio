@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+<header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    <p class="games-meta-date"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+    
+    <table class="post-features">
+      {% if page.status != "" %}
+      <tr>
+          <th>Status: </th>
+          <td>{{page.status}}</td>
+      </tr>
+      {% endif %}
+      {% if page.software-used != "" %}
+      <tr>
+          <th>Software Used: </th>
+          <td>{{page.software-used}}</td>
+      </tr>
+      {% endif %}
+      {% if page.languages-used != "" %}
+      <tr>
+          <th>Language Used:</th>
+          <td>{{page.languages-used}}</td>
+      </tr>
+      {% endif %}
+      {% if page.textures != "" %}
+      <tr>
+          <th>Textures:</th>
+          <td>{{page.textures}}</td>
+      </tr>
+      {% endif %}
+      {% if page.download-location != "" %}
+      <tr>
+          <th>Download Location:</th>
+          <td>{{page.download-location}}</td>
+      </tr>
+      {% endif %}
+  </table>
+</header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+</article>

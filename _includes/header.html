@@ -1,0 +1,15 @@
+<header class="site-header">
+
+    <a class="site-title" href="{{ site.baseurl }}/">Zoe Rowbotham</a>
+
+    <nav class="site-nav">
+      <div class="trigger">
+        {% for my_page in site.links %}
+          <a class="page-link"
+             target="{% if my_page.external %}_blank {% else %}_top{% endif %}" 
+             href="{{site.baseurl}}{{ my_page.url }}">{{my_page.icon}} {{ my_page.title }}</a>
+        {% endfor %}
+      </div>
+    </nav>
+
+</header>

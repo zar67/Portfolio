@@ -1,0 +1,28 @@
+---
+layout: page
+title: Blog
+---
+
+{% assign sorted_cats = site.categories | sort %}
+<ul class="post-category-list">
+  {% for category in sorted_cats %}
+      <li><a href="#{{category[0]}}">{{category[0]}}</a></li>
+  {% endfor %}
+</ul>
+
+{% for category in site.categories %}
+  <a id="{{category[0]]}}" class="anchor"></a>
+  <h2 class="page-heading">{{category[0]}}</h2>
+
+  <ul class="post-list">
+  {% for post in site.posts %}
+    {% if post.categories contains category[0] %}
+    <li class="post-item">
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+      <h2><a class="post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+    </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+{% endfor %}

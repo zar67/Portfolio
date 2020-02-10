@@ -1,0 +1,34 @@
+---
+layout: game
+title:  "Block Breaker"
+icon: "BlockBreaker/block-breaker.jpg"
+date:   2019-03-11 10:00:00 +0000
+description: A simple block breaking game created in tutorials as my first ever game project in C++. The ball bounces around the screen, breaking blocks as it goes. All code created in C++ with help from an OpenGL Game Framework.
+status: "Finished"
+software-used: "CLion, GitKraken, GitHub"
+languages-used: C++
+textures: <a href="https://www.kenney.nl/" target="_blank">Kenney</a>
+download-location: <a href="https://zoerowbotham.itch.io/block-breaker" target="_blank">zoerowbotham.itch.io</a>
+tags: student-project breakout arkanoid C++
+---
+
+Block breaker is a small, simple game I made as part of my first year in order to help me learn C++ and the OpenGL Game Framework used in my first year. The game has blocks which when destroyed will give the player points. Blocks are randomly coloured and some will release power ups that allow the player to shoot bullets for a limited time.
+
+Randomly throughout the game gems will fall from the top to give bonus points. When the ball falls below the paddle, the player loses a life.
+
+<center>
+<video controls>
+  <source src="{{ site.baseurl }}/assets/BlockBreaker/breakout-cover.mp4" type="video/mp4">
+</video>
+</center>
+
+When certain blocks are hit, a star shaped power up falls from them. If the player manages to collect the power up (by colliding with it) then they will be able to shoot bullets, with Space, in order to help destroy the blocks. This game can get quite hectic quickly with the ball, shots, gems and power-ups all moving around the screen.
+
+<center>
+<img src="{{ site.baseurl }}/assets/BlockBreaker/breakout-menu.JPG" style="height: 400px;" />
+<img src="{{ site.baseurl }}/assets/BlockBreaker/breakout-game.JPG" style="height: 400px;" />
+</center>
+<center>
+<img src="{{ site.baseurl }}/assets/BlockBreaker/breakout-level.JPG" style="height: 400px;" />
+</center>
+<br>

@@ -1,0 +1,21 @@
+---
+layout: page
+title: Games
+---
+
+<ul class="games-list">
+    {% for game in site.games reversed %}
+      <li>
+        <h2 class="games-heading">{{game.title}}</h2>
+        <p class="games-meta-date">{{ game.date | date: "%b %-d, %Y" }}</p>
+        
+        <a class="games-link" href="{{ site.baseurl }}{{ game.url }}"><img src="{{site.baseurl}}/assets/{{game.icon}}" class="games-image"></a>
+
+        <ul class="games-tags">
+          {% for tag in game.tags %}  
+          <li class="games-tag">{{tag}}</li>
+          {% endfor %}
+        </ul>
+      </li>
+    {% endfor %}
+</ul>
