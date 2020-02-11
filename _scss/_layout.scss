@@ -10,6 +10,38 @@
 
     // Positioning context for the mobile navigation icon
     position: fixed;
+
+    @include media-query($on-palm) {
+        display: block;
+        clear: both;
+        text-align: center;
+        
+        .nav-outer {
+            display: table;
+            margin: 0 auto;
+        }
+
+        .nav-name {
+            display: none;
+        }
+
+        .site-nav {
+            display: block;
+            justify-self: center;
+        }
+
+        li {
+            display: inline-block;
+            padding: 0 10px;
+        }
+
+        .site-title {
+            display: block;
+            float: none;
+            clear: both;
+            width: 100%;
+        }
+    }
 }
 
 .site-title {
@@ -26,8 +58,19 @@
 }
 
 .site-nav {
+    list-style: none;
     float: left;
     line-height: 56px;
+    
+    li {
+        display: inline-block;
+        margin: 0 10px;
+
+        // Gaps between nav items, but not on the last one
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
 
     .menu-icon {
         display: none;
@@ -40,65 +83,9 @@
         line-height: $base-line-height;
         text-transform: uppercase;
 
-        // Gaps between nav items, but not on the last one
-        &:not(:last-child) {
-            margin-right: 20px;
-        }
-
         &:hover {
             color: $brand-color;
             @include easeOut();
-
-
-        }
-    }
-
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: $spacing-unit / 2;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-
-            &:not(:last-child) {
-                margin-right: 0;
-            }
-            margin-left: 20px;
         }
     }
 }
@@ -196,17 +183,29 @@
  * Games
  */
 
-.games-list {
-    list-style: none;
-    margin: auto;
+ .games {
+    .games-list {
+        list-style: none;
+        margin: auto;
 
-    > li {
-        margin: auto 10px;
-        display: inline-block;
-        vertical-align: top;
-        min-width: 200px;
-        width: 45%;
-        margin-bottom: $spacing-unit;
+        > li {
+            margin: auto 10px;
+            display: inline-block;
+            vertical-align: top;
+            min-width: 200px;
+            width: 45%;
+            margin-bottom: $spacing-unit;
+        }
+    }
+
+    @include media-query($on-palm) {
+        display: block;
+        clear: both;
+        text-align: center;
+    
+        .games-list li {
+            width: 55%;
+        }
     }
 }
 

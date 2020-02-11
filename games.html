@@ -3,7 +3,8 @@ layout: page
 title: Games
 ---
 
-<ul class="games-list">
+<div class="games">
+  <ul class="games-list">
     {% for game in site.games reversed %}
       <li>
         <h2 class="games-heading">{{game.title}}</h2>
@@ -18,4 +19,5 @@ title: Games
         </ul>
       </li>
     {% endfor %}
-</ul>
+  </ul>
+</div>

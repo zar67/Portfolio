@@ -2,14 +2,14 @@
 
     <a class="site-title" href="{{ site.baseurl }}/">Zoe Rowbotham</a>
 
-    <nav class="site-nav">
-      <div class="trigger">
+    <div class="nav-outer">
+      <ul class="site-nav">
         {% for my_page in site.links %}
-          <a class="page-link"
-             target="{% if my_page.external %}_blank {% else %}_top{% endif %}" 
-             href="{{site.baseurl}}{{ my_page.url }}">{{my_page.icon}} {{ my_page.title }}</a>
+          <li><a class="page-link"
+              target="{% if my_page.external %}_blank {% else %}_top{% endif %}" 
+              href="{{site.baseurl}}{{ my_page.url }}"><span class="nav-icon">{{my_page.icon}}</span> <span class="nav-name">{{ my_page.title }}</span></a></li>
         {% endfor %}
-      </div>
-    </nav>
+      </ul>
+    </div>
 
 </header>
