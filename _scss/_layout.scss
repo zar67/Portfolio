@@ -113,6 +113,10 @@
     padding: 20px 0;
     padding-top: 80px;
 
+    @include media-query($on-palm) {
+        padding-top: 120px;
+    }
+
     h3 {
         color: $brand-color;
         font-weight: bold;
