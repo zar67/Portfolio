@@ -16,18 +16,14 @@ We were given the task for one of my university modules to port a text adventure
 
 The video below shows the BASIC version of the game running:
 
-<center>
 <video controls>
   <source src="{{ site.baseurl }}/assets/BasicReb0rn/basic-gameplay.mp4" type="video/mp4">
 </video>
-</center>
 
 Below is the map of the game and my C++ port of the text adventure.
 
-<center><img src="{{ site.baseurl }}/assets/BasicReb0rn/house-map.jpg" style="height: 500px;" /></center>
+<img src="{{ site.baseurl }}/assets/BasicReb0rn/house-map.jpg"/>
 
-<center>
 <video controls>
   <source src="{{ site.baseurl }}/assets/BasicReb0rn/cpp-port-gameplay.mp4" type="video/mp4">
 </video>
-</center>

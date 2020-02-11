@@ -16,8 +16,6 @@ Tile Tap is my first game released on an app store. It is a simple clicker game 
 
 The idea of the game is to be a quick mobile game, tapping on tiles and gaining resources.
 
-<center><img src="{{ site.baseurl }}/assets/TileTap/banner.jpg" style="height: 300px;" /></center>
-<center>
-    <img src="{{ site.baseurl }}/assets/TileTap/start.jpg" style="height: 500px;" />
-    <img src="{{ site.baseurl }}/assets/TileTap/lots.jpg" style="height: 500px;" />
-</center><br>
+<img src="{{ site.baseurl }}/assets/TileTap/banner.jpg"/>
+<img src="{{ site.baseurl }}/assets/TileTap/start.jpg"/>
+<img src="{{ site.baseurl }}/assets/TileTap/lots.jpg"/>

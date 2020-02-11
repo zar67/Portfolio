@@ -12,7 +12,7 @@ download-location: ""
 tags: student-project the-shining coursework C++ group-project
 ---
 
-<center><img src="{{ site.baseurl }}/assets/TheShining/the_shining_poster.jpg" style="height: 300px;" /></center>
+<img src="{{ site.baseurl }}/assets/TheShining/the_shining_poster.jpg"/>
 
 As part of one of my modules for uni we were given the task to create a game,= in groups based on the shining. 
 
@@ -20,8 +20,6 @@ Me and my group decided to make a 2D top-down rouge-like inspired by The Binding
 
 For this game, I implemented the UI system, the demon enemies and the random room generation. My development process and more information can be found on my devlog <a target="_blank" href="https://uwegames-llp.github.io/the-shining-devlog-zar67/">here</a>.
 
-<center>
 <video controls>
   <source src="{{ site.baseurl }}/assets/TheShining/video.mp4" type="video/mp4">
 </video>
-</center>

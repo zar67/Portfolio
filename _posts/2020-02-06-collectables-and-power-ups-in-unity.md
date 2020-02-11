@@ -7,7 +7,7 @@ categories: Gameplay-Programming-Module
 
 The next task set for my Gameplay Programming module is to implement two collectables (a double jump and a speed boost) into my project. Since I have already implemented a double jump into my Character Controller affecting the values on the player will be simple, but I will need to think about how to implement these collectables so that more can be implemented in the future. The aims and objectives for this task are shown below:
 
-<center><img src="{{ site.baseurl }}/assets/Blog/GPCollectables/objectives.png" style="height: 350px;" /></center>
+<img src="{{ site.baseurl }}/assets/Blog/GPCollectables/objectives.png"/>
 
 It is important that I setup these collectables in a way that it is easy to make more of different types. I am planning on setting up a parent Collectable script which my double jump and speed boost powerups will inherit from. All of the collision and particle effects will be handled on the parent script while the specific gameplay changes will be handled on the individual child scripts.
 The examples we have been given to look at are <a href="https://www.youtube.com/watch?v=h9dY6gv1hzA" target="_blank">Jak and Dexter</a> as well as <a href="https://www.youtube.com/watch?v=L2DDpMLijC0" target="_blank">Spyro</a>, these are the collectable effects we should be looking to implement.
@@ -18,7 +18,7 @@ The base collectable will handle collision, the duration of the effect, any part
 
 Below is my implemented update function. If the powerup has been collected, then it will update the timer until the power up should be disabled. The object will also rotate while active to add to the look and feel of the collectable. Finally, if the object isn't active, and it is a collectable that can re-spawn, then the re-spawn timer will be updated until the timer ends and the object appears again.
 
-<center><img src="{{ site.baseurl }}/assets/Blog/GPCollectables/base_collectable.png" style="height: 400px;" /></center>
+<img src="{{ site.baseurl }}/assets/Blog/GPCollectables/base_collectable.png" />
 
 On collision with the object, the Pickup() function is called, which will eventually alter the gameplay, the effect duration timer is set to 0 and the object is set inactive so it cannot be collided with again.
 When the timer runs out, the object is set active again and the respawn timer is reset to 0.
@@ -27,13 +27,13 @@ When the timer runs out, the object is set active again and the respawn timer is
 
 After setting up the base collectable adding the power-ups in is quite simple, I created a new script that inherits from Collectable and added the Pickup() and Disable() functions. In this script I need to populate those functions with lines of code that affect player values. So, in the double jump script I set the boolean can_double_jump to true in Pickup() and to false in Disable().
 
-<center><img src="{{ site.baseurl }}/assets/Blog/GPCollectables/double_jump.png" style="height: 200px;" /></center>
+<img src="{{ site.baseurl }}/assets/Blog/GPCollectables/double_jump.png" />
 
 <h3>Speed Boost</h3>
 
 Implementing the speed boost was just as easy, I setup the Pickup() and Disable() functions to be the following:
 
-<center><img src="{{ site.baseurl }}/assets/Blog/GPCollectables/speed_boost.png" style="height: 200px;" /></center>
+<img src="{{ site.baseurl }}/assets/Blog/GPCollectables/speed_boost.png"/>
 
 <h3>Particles</h3>
 
@@ -42,7 +42,7 @@ Default particles will add effects to the collectable, like the rotation, while 
 I will add a simple script to the pickup particles that deletes them when they stop playing. The default particles will be disabled when the collectable is, and the player particles will be deleted when the powerup timer ends. 
 When the player collides with the particle the Collect() function is called:
 
-<center><img src="{{ site.baseurl }}/assets/Blog/GPCollectables/particles.png" style="height: 500px;" /></center>
+<img src="{{ site.baseurl }}/assets/Blog/GPCollectables/particles.png"/>
 
 <h3>UI</h3>
 
@@ -56,11 +56,13 @@ I also wanted to update the position of the timers so that they always occurred 
 
 I did all this on a new UICollectables script, the update function on that looks like this:
 
-<center><img src="{{ site.baseurl }}/assets/Blog/GPCollectables/ui.png" style="height: 350px;" /></center>
+<img src="{{ site.baseurl }}/assets/Blog/GPCollectables/ui.png"/>
 
 After implementing all this, I have an expandable collectable system which I can quite quickly add new and different power ups to, with working visuals to indicate to the player what power ups they have.
 
-<iframe width="100%" height="500" src="https://www.youtube.com/embed/jAmGZBbe97A" frameborder="0" allowfullscreen></iframe>
+<div class="iframe-container">
+<iframe src="https://www.youtube.com/embed/jAmGZBbe97A" frameborder="0" allowfullscreen></iframe>
+</div>
 
 <h3>Improvements</h3>
 

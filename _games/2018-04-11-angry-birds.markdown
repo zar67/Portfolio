@@ -18,13 +18,11 @@ As the first time trying to implement physics into a game from scratch this task
 
 As you can see in the video, the physics isn't perfect...
 
-<center>
 <video controls>
   <source src="{{ site.baseurl }}/assets/AngryBirds/angry-birds-cover.mp4" type="video/mp4">
 </video>
-</center>
 
 These screenshots show the 2 levels currently in the game. Each level has a number of pigs and some structures to hold them up.
 
-<center><img src="{{ site.baseurl }}/assets/AngryBirds/angry-birds-game.jpg" style="height: 200px;" />
-<img src="{{ site.baseurl }}/assets/AngryBirds/angry-birds-game-2.jpg" style="height: 200px;" /></center><br>
+<img src="{{ site.baseurl }}/assets/AngryBirds/angry-birds-game.jpg"/>
+<img src="{{ site.baseurl }}/assets/AngryBirds/angry-birds-game-2.jpg"/>

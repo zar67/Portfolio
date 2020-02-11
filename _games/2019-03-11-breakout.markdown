@@ -16,19 +16,12 @@ Block breaker is a small, simple game I made as part of my first year in order t
 
 Randomly throughout the game gems will fall from the top to give bonus points. When the ball falls below the paddle, the player loses a life.
 
-<center>
 <video controls>
   <source src="{{ site.baseurl }}/assets/BlockBreaker/breakout-cover.mp4" type="video/mp4">
 </video>
-</center>
 
 When certain blocks are hit, a star shaped power up falls from them. If the player manages to collect the power up (by colliding with it) then they will be able to shoot bullets, with Space, in order to help destroy the blocks. This game can get quite hectic quickly with the ball, shots, gems and power-ups all moving around the screen.
 
-<center>
-<img src="{{ site.baseurl }}/assets/BlockBreaker/breakout-menu.JPG" style="height: 400px;" />
-<img src="{{ site.baseurl }}/assets/BlockBreaker/breakout-game.JPG" style="height: 400px;" />
-</center>
-<center>
-<img src="{{ site.baseurl }}/assets/BlockBreaker/breakout-level.JPG" style="height: 400px;" />
-</center>
-<br>
+<img src="{{ site.baseurl }}/assets/BlockBreaker/breakout-menu.JPG"/>
+<img src="{{ site.baseurl }}/assets/BlockBreaker/breakout-game.JPG"/>
+<img src="{{ site.baseurl }}/assets/BlockBreaker/breakout-level.JPG"/>

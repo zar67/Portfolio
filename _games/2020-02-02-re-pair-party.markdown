@@ -18,4 +18,6 @@ By the end of Friday night we had our game idea ready: A 2D top-down 4 person pa
 
 For this game, I worked on the UI of the main game screen as well as the speakers. Since there was 5 or us and the main technical requirement of our game was the AI, there wasn't alot of work to go around. I also helped with making some of the sprites for the game.
 
-<iframe width="100%" height="500" src="https://www.youtube.com/embed/RrJM9NVGRvo" frameborder="0" allowfullscreen></iframe>
+<div class="iframe-container">
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/RrJM9NVGRvo" frameborder="0" allowfullscreen></iframe>
+</div>

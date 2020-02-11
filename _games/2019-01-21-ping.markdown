@@ -18,16 +18,12 @@ I went beyond the spec by including a one-player mode in which an AI is used to 
 
 I improved my knowledge of collisions for this game and used axis aligned bounding boxes for the paddles and a circle shape for the ball, in order to achieve more accurate collisions.
 
-<center>
 <video controls>
   <source src="{{ site.baseurl }}/assets/Ping/ping-cover.mp4" type="video/mp4">
 </video>
-</center>
 
 Below is a video of the AI (the right paddle) at work. This is done by an invisible second ball travelling at a faster speed so the AI can try and position itself correctly. In the video the game is in hard mode, with the blue obstacles randomly moving up and down. These blocks obstruct the ball making it harder to predict gameplay.
 
-<center>
 <video controls>
   <source src="{{ site.baseurl }}/assets/Ping/ai-video.mp4" type="video/mp4">
 </video>
-</center>
