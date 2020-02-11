@@ -7,7 +7,7 @@
         {% for my_page in site.links %}
           <li><a class="page-link"
               target="{% if my_page.external %}_blank {% else %}_top{% endif %}" 
-              href="{{site.baseurl}}{{ my_page.url }}"><span class="nav-icon">{{my_page.icon}}</span> <span class="nav-name">{{ my_page.title }}</span></a></li>
+              href="{{site.baseurl}}{{ my_page.url }}">{{ my_page.icon}} {{ my_page.title }}</a></li>
         {% endfor %}
       </ul>
     </div>

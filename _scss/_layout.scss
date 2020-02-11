@@ -21,10 +21,6 @@
             margin: 0 auto;
         }
 
-        .nav-name {
-            display: none;
-        }
-
         .site-nav {
             display: block;
             justify-self: center;
@@ -70,10 +66,6 @@
         &:not(:last-child) {
             margin-right: 10px;
         }
-    }
-
-    .menu-icon {
-        display: none;
     }
 
     .page-link {

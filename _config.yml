@@ -32,15 +32,15 @@ github_username:  jekyll
 links:
   - title: Games
     url:  /games.html
-    icon: <i class="fas fa-gamepad fa-x2 nav-image"></i>
+    icon: <i class="fas fa-gamepad nav-image"></i>
     external: false
   - title: Blog
     url:  /blog.html
-    icon: <i class="fas fa-comments fa-x2 nav-image"></i>
+    icon: <i class="fas fa-comments nav-image"></i>
     external: false
   - title: CV
     url: "/assets/CV.pdf"
-    icon: <i class="fas fa-pen-square fa-x2 nav-image"></i>
+    icon: <i class="fas fa-pen-square nav-image"></i>
     external: true
 
 collections:
