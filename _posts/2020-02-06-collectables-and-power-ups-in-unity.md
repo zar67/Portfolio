@@ -18,7 +18,7 @@ The base collectable will handle collision, the duration of the effect, any part
 
 Below is my implemented update function. If the powerup has been collected, then it will update the timer until the power up should be disabled. The object will also rotate while active to add to the look and feel of the collectable. Finally, if the object isn't active, and it is a collectable that can re-spawn, then the re-spawn timer will be updated until the timer ends and the object appears again.
 
-```cpp
+```c#
     public void Update()
     {
         if (collected)
@@ -54,7 +54,7 @@ When the timer runs out, the object is set active again and the respawn timer is
 
 After setting up the base collectable adding the power-ups in is quite simple, I created a new script that inherits from Collectable and added the Pickup() and Disable() functions. In this script I need to populate those functions with lines of code that affect player values. So, in the double jump script I set the boolean can_double_jump to true in Pickup() and to false in Disable().
 
-```cpp
+```c#
     public override void Pickup()
     {
         player.can_double_jump = true;
@@ -70,7 +70,7 @@ After setting up the base collectable adding the power-ups in is quite simple, I
 
 Implementing the speed boost was just as easy, I setup the Pickup() and Disable() functions to be the following:
 
-```cpp
+```c#
     public override void Pickup()
     {
         player.move_speed = RPGCharacterController.base_move_speed * 2;
@@ -89,7 +89,7 @@ Default particles will add effects to the collectable, like the rotation, while 
 I will add a simple script to the pickup particles that deletes them when they stop playing. The default particles will be disabled when the collectable is, and the player particles will be deleted when the powerup timer ends. 
 When the player collides with the particle the Collect() function is called:
 
-```cpp
+```c#
     void Collect()
     {
         Pickup();
@@ -134,7 +134,7 @@ I also wanted to update the position of the timers so that they always occurred 
 
 I did all this on a new UICollectables script, the update function on that looks like this:
 
-```cpp
+```c#
     private void Update()
     {
         Vector2 next_position = new Vector2(8, 28);

@@ -24,7 +24,7 @@ My first step is to study and try and figure out the character controller includ
 
 So, starting with the basic movement of moving around the space, I created a blank script to work from. I added some basic movement variables to keep use like movement speed and rotation speed and then got to work on the inputs. The "horizontal" and "vertical" axis are already setup in Unity to work for both controller and keyboard, so I decided to use those for my movement. This was quite simple to set up, I changed the velocity of my character based on the horizontal and vertical input given.
 
-```cpp
+```c#
     void FixedUpdate()
     {
         Vector3 velocity = new Vector3(Input.GetAxis("Horizontal") * move_speed, 0, Input.GetAxis("Vertical") * move_speed);
@@ -42,7 +42,7 @@ I also added in a "strafe" animation, where if the left trigger is pressed, the 
 
 The next thing I need to implement in order to properly test my character controller is a basic camera that follows the player, I will need to also change the movement of the player so that it is relative to the point of view of the camera. For example, when the analog stick is moved down, the player should always move towards the camera. This is possible with LookRotation() and Slerp().
 
-```cpp
+```c#
     void FixedUpdate()
     {
         // Move
@@ -65,7 +65,7 @@ Jumping is more complicated to implement than movement; there is the jump, the f
 
 FixedUpdate() is used in Unity to handle physics, however input actions like GetButtonDown() can be unreliable in FixedUpdate(). Therefore I need to detect input and set boolean values in Update() and then apply the changes I want in FixedUpdate() if the booleans are true. My code so far looks like this:
 
-```cpp
+```c#
     void Update()
     {
         if (accept_input)
@@ -158,7 +158,7 @@ The animations for the two handed sword are similar to the unarmed animations, b
 I also added another armed layer for attacking, so that when armed the player attacks with the sword. This gave me four animation layers in total: Base Layer, Armed Layer, Attack Unarmed, Attack Armed.
 I decided that if the player has not attacked in a certain amount of time (5 seconds) the character will automatically put their sword away. 
 
-```cpp
+```c#
     IEnumerator Sheath()
     {
         player_animator.SetBool("armed", false);
