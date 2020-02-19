@@ -18,7 +18,34 @@ The base collectable will handle collision, the duration of the effect, any part
 
 Below is my implemented update function. If the powerup has been collected, then it will update the timer until the power up should be disabled. The object will also rotate while active to add to the look and feel of the collectable. Finally, if the object isn't active, and it is a collectable that can re-spawn, then the re-spawn timer will be updated until the timer ends and the object appears again.
 
-<img src="{{ site.baseurl }}/assets/Blog/GPCollectables/base_collectable.png" />
+```cpp
+    public void Update()
+    {
+        if (collected)
+        {
+            elapsed_time += Time.deltaTime;
+            
+            if (elapsed_time >= collectable_time_limit)
+            {
+                Disable();
+            }
+        }
+     
+        if (active)
+        {
+            transform.Rotate(Vector3.up * Time.deltaTime * rotate_speed);
+        }
+        else if (can_respawn)
+        {
+            respawn_timer += Time.deltaTime;
+    
+            if (respawn_timer >= respawn_delay)
+            {
+                Respawn();
+            }
+        }  
+    }
+```
 
 On collision with the object, the Pickup() function is called, which will eventually alter the gameplay, the effect duration timer is set to 0 and the object is set inactive so it cannot be collided with again.
 When the timer runs out, the object is set active again and the respawn timer is reset to 0.
@@ -27,13 +54,34 @@ When the timer runs out, the object is set active again and the respawn timer is
 
 After setting up the base collectable adding the power-ups in is quite simple, I created a new script that inherits from Collectable and added the Pickup() and Disable() functions. In this script I need to populate those functions with lines of code that affect player values. So, in the double jump script I set the boolean can_double_jump to true in Pickup() and to false in Disable().
 
-<img src="{{ site.baseurl }}/assets/Blog/GPCollectables/double_jump.png" />
+```cpp
+    public override void Pickup()
+    {
+        player.can_double_jump = true;
+    }
+
+    public override void Disable()
+    {
+        player.can_double_jump = false;
+    }
+```
 
 <h3>Speed Boost</h3>
 
 Implementing the speed boost was just as easy, I setup the Pickup() and Disable() functions to be the following:
 
 <img src="{{ site.baseurl }}/assets/Blog/GPCollectables/speed_boost.png"/>
+```cpp
+    public override void Pickup()
+    {
+        player.move_speed = RPGCharacterController.base_move_speed * 2;
+    }
+
+    public override void Disable()
+    {
+        player.move_speed = RPGCharacterController.base_move_speed;
+    }
+```
 
 <h3>Particles</h3>
 
@@ -42,7 +90,38 @@ Default particles will add effects to the collectable, like the rotation, while 
 I will add a simple script to the pickup particles that deletes them when they stop playing. The default particles will be disabled when the collectable is, and the player particles will be deleted when the powerup timer ends. 
 When the player collides with the particle the Collect() function is called:
 
-<img src="{{ site.baseurl }}/assets/Blog/GPCollectables/particles.png"/>
+```cpp
+    void Collect()
+    {
+        Pickup();
+        
+        elapsed_time = 0;
+        collected = true;
+        active = false;
+    
+        renderer.enabled = false;
+        collider.enabled = false;
+    
+        if (default_particles)
+        {
+            ParticleSystem.EmmisionModule emmision = default_particles_emmision;
+            emmision.enabled = false;
+        }
+    
+        if (pickup_particles_prefab)
+        {
+            Instantiate(pickup_particles_prefab, transform.position, transform.rotation);
+        }
+    
+        if (player_particles_prefab)
+        {
+            player_particles = Instantiate(player_particles_prefab,
+                                           player.gameObject.transform.position,
+                                           Quaternion.identity,
+                                           player.gameObject.transform);
+        }
+    }
+```
 
 <h3>UI</h3>
 
@@ -56,7 +135,34 @@ I also wanted to update the position of the timers so that they always occurred 
 
 I did all this on a new UICollectables script, the update function on that looks like this:
 
-<img src="{{ site.baseurl }}/assets/Blog/GPCollectables/ui.png"/>
+```cpp
+    private void Update()
+    {
+        Vector2 next_position = new Vector2(8, 28);
+    
+        if (player.double_jump)
+        {
+            double_jump_ui.GetComponent<RectTransform>().position = next_position;
+            next_position.x = 52;
+            double_jump_ui.fillAmount = (player.double_jump.collectable_time_limit - player.double_jump.elapsed_time) / player.double_jump.collectable_time_limit;
+        }
+        else
+        {
+            double_jump_ui.fillAmount = 0;
+        }
+    
+        if (player.speed_boost)
+        {
+            speed_boost_ui.GetComponent<RectTransform>().position = next_position;
+            next_position.x = 52;
+            speed_boost_ui.fillAmount = (player.speed_boost.collectable_time_limit - player.speed_boost.elapsed_time) / player.speed_boost.collectable_time_limit;
+        }
+        else
+        {
+            speed_boost_ui.fillAmount = 0;
+        }
+    }
+```
 
 After implementing all this, I have an expandable collectable system which I can quite quickly add new and different power ups to, with working visuals to indicate to the player what power ups they have.
 

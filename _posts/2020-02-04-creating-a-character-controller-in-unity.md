@@ -24,7 +24,13 @@ My first step is to study and try and figure out the character controller includ
 
 So, starting with the basic movement of moving around the space, I created a blank script to work from. I added some basic movement variables to keep use like movement speed and rotation speed and then got to work on the inputs. The "horizontal" and "vertical" axis are already setup in Unity to work for both controller and keyboard, so I decided to use those for my movement. This was quite simple to set up, I changed the velocity of my character based on the horizontal and vertical input given.
 
-<img src="{{ site.baseurl }}/assets/Blog/GPAvatar/movement.png"/>
+```cpp
+    void FixedUpdate()
+    {
+        Vector3 velocity = new Vector3(Input.GetAxis("Horizontal") * move_speed, 0, Input.GetAxis("Vertical") * move_speed);
+        player_rb.velocity = velocity;
+    }
+```
 
 This got my character moving around the screen, but obviously this didn't implement any animations. So, I added an animator and a couple variables that I update within my script.
 
@@ -36,7 +42,22 @@ I also added in a "strafe" animation, where if the left trigger is pressed, the 
 
 The next thing I need to implement in order to properly test my character controller is a basic camera that follows the player, I will need to also change the movement of the player so that it is relative to the point of view of the camera. For example, when the analog stick is moved down, the player should always move towards the camera. This is possible with LookRotation() and Slerp().
 
-<img src="{{ site.baseurl }}/assets/Blog/GPAvatar/camera_rotation.png"/>
+```cpp
+    void FixedUpdate()
+    {
+        // Move
+        Vector3 velocity = new Vector3(Input.GetAxis("Horizontal") * move_speed, 0, Input.GetAxis("Vertical") * move_speed);
+    
+        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+        {
+            transform.rotation = Quaternion.Euler(0f, camera.rotation.eulerAngles.y, 0f);
+            Quaternion new_rotation = Quaternion.LookRotation(new Vector3(velocity.x, 0, velocity.z));
+            transform.rotation = Quaternion.Slerp(transform.rotation, new_rotation, rotate_speed * Time.deltaTime);
+        }
+    
+        player_rb.velocity = velocity; 
+    }
+```
 
 <h3>Jumping</h3>
 
@@ -44,9 +65,87 @@ Jumping is more complicated to implement than movement; there is the jump, the f
 
 FixedUpdate() is used in Unity to handle physics, however input actions like GetButtonDown() can be unreliable in FixedUpdate(). Therefore I need to detect input and set boolean values in Update() and then apply the changes I want in FixedUpdate() if the booleans are true. My code so far looks like this:
 
-<img src="{{ site.baseurl }}/assets/Blog/GPAvatar/jump_update.png"/>
-<img src="{{ site.baseurl }}/assets/Blog/GPAvatar/jump_fixed_update_1.png"/>
-<img src="{{ site.baseurl }}/assets/Blog/GPAvatar/jump_fixed_update_2.png"/>
+```cpp
+    void Update()
+    {
+        if (accept_input)
+        {
+            UpdateAnimator();
+            
+            // Set Jump Bools
+            if (Input.GetButtonDown("Jump"))
+            {
+                // Jump
+                if (IsGrounded())
+                {
+                    set_jump = true;
+                }
+                // Double Jump
+                else if (can_double_jump && !IsGrounded() && (player_animator.GetInteger("jumping") != 0) && !double_jump)
+                {
+                    set_double_jump = true;
+                }
+            }
+        }
+    }
+
+    void FixedUpdate()
+    {
+        // Move
+        Vector3 velocity = new Vector3(Input.GetAxis("Horizontal") * move_speed, 0, Input.GetAxis("Vertical") * move_speed);
+    
+        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+        {
+            transform.rotation = Quaternion.Euler(0f, camera.rotation.eulerAngles.y, 0f);
+            Quaternion new_rotation = Quaternion.LookRotation(new Vector3(velocity.x, 0, velocity.z));
+            transform.rotation = Quaternion.Slerp(transform.rotation, new_rotation, rotate_speed * Time.deltaTime);
+        }
+    
+        if (IsGrounded() && player_animator.GetInteger("jumping") == 0)
+        {
+            velocity.y = 0;
+        }
+        else
+        {
+            velocity.y = player_rb.velocity.y;
+        }
+     
+        player_rb.velocity = velocity; 
+     
+        if (set_jump)
+        {
+            set_jump = false;
+            player_animtor.SetInteger("jumping", 1);
+            Vector3 position = player_rb.gameObject.transform.position;
+            position.y += 0.5f;
+            player_rb.gameObject.transform.position = position;
+            player_rb.velocity = Vector3.up * jump_force;
+        }
+     
+        if (set_double_jump)
+        {
+            set_double_jump = false;
+            double_jump = true;
+            player_animator.Play("Double Jump", 0);
+            player_rb.velocity = Vector3.up * double_jump_force;
+        }
+     
+        if (player_rb.velocity.y <= 0)
+        {
+            // Land
+            if (IsGrounded())
+            {
+                player_animator.SetInteger("jumping", 0);
+                double_jump = false;
+            }
+            // Fall
+            else
+            {
+                player_animator.SetInteger("jumping", 2);
+            }
+        }
+    }
+```
 
 My jumping definitely isn't perfect, there are still bugs and tweaks that could be made to make it smoother, however, I'm currently happy with my implementation and I'm limited on time, so I'm going to move on to the attacking.
 
@@ -59,7 +158,33 @@ The animations for the two handed sword are similar to the unarmed animations, b
 I also added another armed layer for attacking, so that when armed the player attacks with the sword. This gave me four animation layers in total: Base Layer, Armed Layer, Attack Unarmed, Attack Armed.
 I decided that if the player has not attacked in a certain amount of time (5 seconds) the character will automatically put their sword away. 
 
-<img src="{{ site.baseurl }}/assets/Blog/GPAvatar/arming.png"/>
+```cpp
+    IEnumerator Sheath()
+    {
+        player_animator.SetBool("armed", false);
+        player_animator.SetLayerWeight(1, 0);
+        player_animator.SetLayerWeight(3, 0);
+        player_animator.Play("Sheath");
+    
+        yield return new WaitForSeconds(0.5f);
+    
+        weapon_armed.SetActive(false);
+        weapon_sheather.SetActive(true);
+    }
+
+    IEnumerator Wield()
+    {
+        player_animator.SetBool("armed", true);
+        player_animator.SetLayerWeight(1, 1);
+        player_animator.SetLayerWeight(3, 1);
+        player_animator.Play("Draw Sword");
+    
+        yield return new WaitForSeconds(0.25f);
+    
+        weapon_armed.SetActive(true);
+        weapon_sheather.SetActive(false);
+    }
+```
 
 After this I also added in a kick to the player. I did this in a similar way to the punching, with a new animation layer, but set the avatar mask to only include the legs, so that the player could kick while doing other animations. 
 
