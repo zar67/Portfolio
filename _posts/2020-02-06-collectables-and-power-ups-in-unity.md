@@ -70,7 +70,6 @@ After setting up the base collectable adding the power-ups in is quite simple, I
 
 Implementing the speed boost was just as easy, I setup the Pickup() and Disable() functions to be the following:
 
-<img src="{{ site.baseurl }}/assets/Blog/GPCollectables/speed_boost.png"/>
 ```cpp
     public override void Pickup()
     {
