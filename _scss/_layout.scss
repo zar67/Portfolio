@@ -142,6 +142,7 @@
 .page-heading {
     font-weight: bold;
     padding: 10px;
+    margin-top: 25px;
     color: $brand-color;
     background: $background-lighter;
     border-radius: 20px;
@@ -166,37 +167,30 @@
     list-style: none;
 
     > li {
-        margin-bottom: $spacing-unit;
+        margin-bottom: 0;
     }
 }
 
 .post-meta {
-    font-size: $small-font-size;
+    font-size: $base-font-size;
     text-align: center;
-    color: $text-color;
+    color: $brand-color;
     margin-bottom: 0;
 }
 
 .post-link {
     text-transform: capitalize;
     font-weight: bold;
-    display: block;
+    display: inline;
     font-size: 24px;
 }
 
-.post-categories {
-    list-style-type: none;
-    font-size: $small-font-size;
-    color: $brand-color;
-    margin: 0;
-}
-
 .post-category {
-    display: inline-block;
-    padding: 3px 8px;
-    margin: 3px;
-    border-radius: 5px;
-    background: $background-darker;
+    font-size: $base-font-size;
+    text-align: center;
+    float: right;
+    color: $text-color;
+    margin-top: 15px;
 }
 
 /**
