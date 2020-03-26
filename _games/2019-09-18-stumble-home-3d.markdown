@@ -9,7 +9,7 @@ software-used: "Unity, Visual Studio"
 languages-used: C#
 textures: <a href="https://www.kenney.nl/" target="_blank">Kenney</a>
 download-location: <a href="https://zoerowbotham.itch.io/stumble-home-3d" target="_blank">zoerowbotham.itch.io</a>
-tags: personal-project C#
+tags: [Personal Project, Unity, C#]
 ---
 
 I remade Stumble Home in order to improve my 3D Unity skills. I had only dabbled in making 2D games before then so this was my first real try in 3D apart from some small coursework projects.

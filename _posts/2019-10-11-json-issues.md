@@ -2,7 +2,7 @@
 layout: post
 title: JSON Issues
 date: 2019-10-11 12:00:00
-category: Basic-Reb0rn-Devlog
+category: [Basic Reb0rn Devlog]
 ---
 
 In order to get the data for the rooms, objects and actions (words) into the game, I decided to use JSON. The image below shows the structure for the three json files I need. 

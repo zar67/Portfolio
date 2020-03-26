@@ -2,7 +2,7 @@
 layout: post
 title: Random Room Generation
 date: 2019-12-06 16:00:00
-category: The-Shining-Devlog
+category: [The Shining Devlog]
 ---
 
 After spending some time thinking about how I wanted to generate the rooms I came up with a basic algorithm, derived from previous projects, that I could use.

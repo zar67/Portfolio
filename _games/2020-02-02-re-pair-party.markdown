@@ -9,7 +9,7 @@ software-used: "Unity, Aesprite, Visual Studio, GitKraken, GitHub"
 languages-used: C#
 textures: "Luke Eyre"
 download-location: ""
-tags: game-jam group-project
+tags: [GGJ2020, Game Jam, Unity, C#, Group Project]
 ---
 
 For the Global Game Jam 2020, the theme was <em>"repair"</em>. I grouped up with a small team of friends and we got to work Friday night thinking of a game. Several ideas were brought up and we quickly became interested in the thought of re-pairing something; like bringing a couple back together or re-pairing to a bluetooth speaker.

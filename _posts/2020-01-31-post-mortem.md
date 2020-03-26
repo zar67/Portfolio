@@ -2,7 +2,7 @@
 layout: post
 title: Post Mortem
 date: 2020-01-31 15:00:00
-categories: The-Shining-Devlog
+categories: [The Shining Devlog]
 ---
 
 When demoing our game, we received some feedback and tried to implement this before the deadline. We managed to include some of the features and improved our game slightly. 

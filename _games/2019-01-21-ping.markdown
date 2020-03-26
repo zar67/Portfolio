@@ -9,7 +9,7 @@ software-used: "CLion, GitKraken, GitHub"
 languages-used: C++
 textures: <a href="https://www.kenney.nl/" target="_blank">Kenney</a>
 download-location: <a href="https://zoerowbotham.itch.io/ping" target="_blank">zoerowbotham.itch.io</a>
-tags: student-project pong recreation coursework C++
+tags: [Student Project, Pong, Coursework, C++]
 ---
 
 Ping was the first piece of coursework for my first year of university. The specification was to make a simple Pong clone where a ball can be bounced off paddles and points could be won by the ball travelling off the side.

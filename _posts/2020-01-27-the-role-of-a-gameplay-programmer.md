@@ -2,7 +2,7 @@
 layout: post
 title:  "The Role of a Gameplay Programmer"
 date:   2020-01-27 10:00:00 +0000
-categories: Gameplay-Programming-Module
+categories: [Gameplay Programming Module]
 ---
 
 <img src="{{ site.baseurl }}/assets/Blog/GameplayProgrammerArticle/code-image.jpg"/>

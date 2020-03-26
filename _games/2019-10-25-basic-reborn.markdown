@@ -9,7 +9,7 @@ software-used: "CLion, GitKraken, GitHub"
 languages-used: C++
 textures: ""
 download-location: ""
-tags: student-project BASIC coursework C++
+tags: [Student Project, BASIC, Coursework, C++]
 ---
 
 We were given the task for one of my university modules to port a text adventure game made in BASIC to C++, adding in Object Oriented programming and fixing any bugs we came across. The game we ported was the from the <a href="https://www.amazon.co.uk/Write-Your-Own-Adventure-Microcomputer/dp/0686878329" target="_blank">Write Your Own Adventure: Programs for Your Microcomputer></a> book. We were first tasked with writing the game out in BASIC, a painstakingly long process that took around 4 hours in total of copying code and fixing many syntax errors.

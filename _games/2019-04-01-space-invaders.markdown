@@ -9,7 +9,7 @@ software-used: "CLion, GitKraken, GitHub"
 languages-used: C++
 textures: <a href="https://www.kenney.nl/" target="_blank">Kenney</a>
 download-location: <a href="https://zoerowbotham.itch.io/spaceinvaders" target="_blank">zoerowbotham.itch.io</a>
-tags: student-project space-invaders recreation C++
+tags: [Student Project, Space Invaders, C++]
 ---
 
 In order to help me learn C++ in my first year of university, I recreated the popular game Space Invaders. In the game, alien ships move downwards towards the player. In order to win the game, the player has to shoot all of the ships. However, if the ships get too close or the player gets shot, it's game over and Earth is taken over by aliens...

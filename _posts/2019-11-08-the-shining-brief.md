@@ -2,7 +2,7 @@
 layout: post
 title: The Shining Brief and Presentation
 date: 2019-11-08 16:00:00
-category: The-Shining-Devlog
+category: [The Shining Devlog]
 ---
 
 <img src="{{ site.baseurl }}/assets/Blog/ShiningDevlog/the_shining_poster.jpg" alt="book cover"/>

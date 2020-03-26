@@ -2,7 +2,7 @@
 layout: post
 title:  "Creating a Character Controller in Unity"
 date:   2020-02-04 10:00:00 +0000
-categories: Gameplay-Programming-Module
+categories: [Gameplay Programming Module]
 ---
 
 ​As part of my Gameplay Programming module I have been tasked with creating a character controller in Unity. We have been told to use the <a target= "_blank" href="https://assetstore.unity.com/packages/3d/animations/rpg-character-mecanim-animation-pack-free-65284">RPG Character Mechanim Animation Pack</a> (the free version) to implement our character, which will give us a character model as well as a collection of animations to use. The pack also has a character controller included to give us an example of what we should implement.

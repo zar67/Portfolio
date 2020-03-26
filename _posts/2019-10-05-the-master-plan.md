@@ -2,7 +2,7 @@
 layout: post
 title: The Master Plan
 date: 2019-10-05 10:00:00
-category: Basic-Reb0rn-Devlog
+category: [Basic Reb0rn Devlog]
 ---
 
 My first step in developing the C++ port of Basic Reb0rn was to get my documentation sorted. I setup a basic GDD and TDD with information from the book and my plans for the game.

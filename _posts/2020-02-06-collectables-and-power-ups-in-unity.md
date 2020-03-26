@@ -2,7 +2,7 @@
 layout: post
 title:  "Collectables and Power Ups in Unity"
 date:   2020-02-06 10:00:00 +0000
-categories: Gameplay-Programming-Module
+categories: [Gameplay Programming Module]
 ---
 
 The next task set for my Gameplay Programming module is to implement two collectables (a double jump and a speed boost) into my project. Since I have already implemented a double jump into my Character Controller affecting the values on the player will be simple, but I will need to think about how to implement these collectables so that more can be implemented in the future. The aims and objectives for this task are shown below:

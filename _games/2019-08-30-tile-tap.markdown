@@ -9,7 +9,7 @@ software-used: "Unity, Visual Studio"
 languages-used: C#
 textures: <a href="https://www.kenney.nl/" target="_blank">Kenney</a>
 download-location: <a href="https://play.google.com/store/apps/details?id=com.ZoeRowbotham.TileTap" target="_blank">Google Play Store</a>
-tags: personal-project C#
+tags: [Personal Project, Unity, C#]
 ---
 
 Tile Tap is my first game released on an app store. It is a simple clicker game where you have to grow your resources. You can do this by buying new tiles that generate resources or by creating building that generate more resources quicker.

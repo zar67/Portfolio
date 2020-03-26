@@ -9,7 +9,7 @@ software-used: "CLion, GitKraken, GitHub"
 languages-used: C++
 textures: <a href="https://www.kenney.nl/" target="_blank">Kenney</a>
 download-location: <a href="https://zoerowbotham.itch.io/angry-birds" target="_blank">zoerowbotham.itch.io</a>
-tags: student-project angry-birds recreation coursework
+tags: [Student Project, Angry Birds, Coursework, C++]
 ---
 
 This Angry Birds remake was my second piece of coursework for my first year of university. I had to make a simple game where you could catapault an object into something else to make it disappear; I expanded on this by creating structures and a very simple (and somewhat buggy) physics simulation to handle the collisions and the resolutions. 

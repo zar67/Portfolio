@@ -2,7 +2,7 @@
 layout: post
 title: Project Architecture
 date: 2019-11-26 14:00:00
-category: The-Shining-Devlog
+category: [The Shining Devlog]
 ---
 
 This is the basic UML for our game. I tried to include as much information as I could for us all to look at, however the structure and attributes are likely to change as we develop our code. 

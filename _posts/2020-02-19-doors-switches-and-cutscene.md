@@ -2,7 +2,7 @@
 layout: post
 title:  "Doors, Switches and Cutscene"
 date:   2020-02-19 10:00:00 +0000
-categories: Gameplay-Programming-Module
+categories: [Gameplay Programming Module]
 ---
 
 For our third Gameplay Programming task, we have to create a door and switch system, with a cutscene to play when the door is opening. Here are the aims and objectives:

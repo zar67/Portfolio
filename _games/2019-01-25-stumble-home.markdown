@@ -9,7 +9,7 @@ software-used: "Unity, Photoshop, Visual Studio"
 languages-used: C#
 textures: <a href="https://globalgamejam.org/users/amythedolphin" target="_blank">Amy Dolphin</a>
 download-location: <a href="https://globalgamejam.org/2019/games/stumble-home" target="_blank">globalgamejam.org</a>
-tags: game-jam Unity
+tags: [GGJ2019, Game Jam, Unity, C#]
 ---
 
 This was my first ever participation in a Global Game Jam and I worked with a small team of friends. Over the weekend we were lucky enough to have the Games Technology computer lab all weekend to work in (and were provided with pizza from our lecturers). I had alot of fun trying to make this game over the weekend and implemented all of the code.

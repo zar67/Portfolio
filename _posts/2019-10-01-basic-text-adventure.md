@@ -2,7 +2,7 @@
 layout: post
 title: BASIC Text Adventure
 date: 2019-10-01 16:00:00
-category: Basic-Reb0rn-Devlog
+category: [Basic Reb0rn Devlog]
 ---
 
 <img src="{{ site.baseurl }}/assets/Blog/BasicRebornDevlog/book_cover.jpg" alt="book cover"/>

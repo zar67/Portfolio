@@ -2,7 +2,7 @@
 layout: post
 title: Post-Mortem
 date: 2019-10-22 18:00:00
-category: Basic-Reb0rn-Devlog
+category: [Basic Reb0rn Devlog]
 ---
 
 Here is the comparison between the original BASIC Game (first) and my C++ port (second).

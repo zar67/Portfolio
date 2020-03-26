@@ -9,7 +9,7 @@ software-used: "CLion, GitKraken, GitHub"
 languages-used: C++
 textures: "Zoe Rowbotham, Thomas Maddams"
 download-location: ""
-tags: student-project the-shining coursework C++ group-project
+tags: [Student Project, The Shining, Coursework, C++, Group Project]
 ---
 
 <img src="{{ site.baseurl }}/assets/TheShining/the_shining_poster.jpg"/>
