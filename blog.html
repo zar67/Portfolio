@@ -3,12 +3,6 @@ layout: page
 title: Blog
 ---
 
-<ul class="post-category-list">
-  {% for category in site.categories reversed %}
-      <li><a href="#{{category[0]}}">{{category[0]}}</a></li>
-  {% endfor %}
-</ul>
-
 {% for category in site.categories reversed %}
   <a id="{{category[0]]}}" class="anchor"></a>
   <h2 class="page-heading">{{category[0]}}</h2>
@@ -17,9 +11,8 @@ title: Blog
   {% for post in site.posts %}
     {% if post.categories contains category[0] %}
     <li class="post-item">
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-      <h2><a class="post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      <h2><a class="post-link" href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a><span class="post-category">{{ post.date | date: "%b %-d, %Y" }}</span></h2>
+      
     </li>
     {% endif %}
   {% endfor %}
