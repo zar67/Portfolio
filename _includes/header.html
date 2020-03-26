@@ -2,14 +2,34 @@
 
     <a class="site-title" href="{{ site.baseurl }}/">Zoe Rowbotham</a>
 
-    <div class="nav-outer">
-      <ul class="site-nav">
-        {% for my_page in site.links %}
-          <li><a class="page-link"
-              target="{% if my_page.external %}_blank {% else %}_top{% endif %}" 
-              href="{{site.baseurl}}{{ my_page.url }}">{{ my_page.icon}} {{ my_page.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
+    <ul class="site-nav">
+      <li>
+        <div class="sub-nav">
+          <a class="page-link" href="{{ site.baseurl}}/games.html"><i class="fas fa-gamepad nav-image"></i> Games</a>
+
+          <div class="sub-nav-content">
+              <a class="sub-page-link" href="{{site.baseurl}}/games.html#student-projects">Student Projects</a>
+              <a class="sub-page-link" href="{{site.baseurl}}/games.html#personal-projects">Personal Projects</a>
+              <a class="sub-page-link" href="{{site.baseurl}}/games.html#game-jams">Game Jams</a>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="sub-nav">
+          <a class="page-link" href="{{site.baseurl}}/blog.html"><i class="fas fa-comments nav-image"></i> Blog</a>
+
+          <div class="sub-nav-content">
+            {% for category in site.categories reversed %}
+              <a class="sub-page-link" href="{{site.baseurl}}/blog.html#{{category[0]}}">{{category[0]}}</a>
+            {% endfor %}
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <a class="page-link" target="_blank" href="{{site.baseurl}}/assets/CV.pdf"><i class="fas fa-pen-square nav-image"></i> CV</a>
+      </li>
+    </ul>
 
 </header>
