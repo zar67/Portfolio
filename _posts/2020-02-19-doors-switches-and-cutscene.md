@@ -32,36 +32,36 @@ I also setup the ability for different doors on my script. If both the booleans 
 This is the basic setup for my switch. The larger collider is a trigger which when the player attacks inside the trigger, the button will be pressed; eventually this is how the cutscene will be called, but for now I will just click the button. The Animation Controller for the switch is exactly the same setup as the door, but with different animations and different trigger names. This will allow me have the switch pressed until the door is closed, then it can be released and able to be pressed again. 
 
 ```c#
-    public void Click()
-    {
-        clicked = true;
-        switch_animator.SetTrigger("clicked");
-    }
+public void Click()
+{
+    clicked = true;
+    switch_animator.SetTrigger("clicked");
+}
 
-    void Release()
-    {
-        clicked = false;
-        switch_animator.SetTrigger("released");
-    }
+void Release()
+{
+    clicked = false;
+    switch_animator.SetTrigger("released");
+}
 ```
 
 These are the two functions that press and release the switch by, simply setting the triggers on the animator. The code also sets a boolean called "clicked" which ensures that the button cannot be clicked again if it has already been clicked. 
 
 ```c#
-    if (Input.GetButtonDown("LeftAttack") &&
-        player_in_range &&
-        !clicked &&
-        target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Default"))
-    {
-        Click();
-        target.Open();
-    }
+if (Input.GetButtonDown("LeftAttack") &&
+    player_in_range &&
+    !clicked &&
+    target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Default"))
+{
+    Click();
+    target.Open();
+}
 
-    if (clicked && 
-        target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Close"))
-    {
-        Release();
-    }
+if (clicked && 
+    target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Close"))
+{
+    Release();
+}
 ```
 
 This is where the input is actually detected for the switch to be pressed. The switch is triggered by the player pressing leftAttack (X) however the player also needs to be inside the trigger, the button cannot be clicked and the door has to be closed. 
@@ -76,28 +76,28 @@ Legend of Zelda: Breath of the Wild has some UI to indicate to the player what t
 I will change the alpha value based on whether the player is inside the trigger. I also want the UI to fade in and out, instead of just appearing. This is the code I setup to do this:
 
 ```c#
-    if (show_ui && interact_UI.alpha != 2)
+if (show_ui && interact_UI.alpha != 2)
+{
+    float new_alpha = Mathf.Lerp(interact_UI.alpha, 2, 0.1f);
+
+    if (new_alpha > 1.95f)
     {
-        float new_alpha = Mathf.Lerp(interact_UI.alpha, 2, 0.1f);
-
-        if (new_alpha > 1.95f)
-        {
-            new_alpha = 2;
-        }
-
-        interact_UI.alpha = new_alpha;
+        new_alpha = 2;
     }
-    else if (!show_ui && interact_UI.alpha != 0)
+
+    interact_UI.alpha = new_alpha;
+}
+else if (!show_ui && interact_UI.alpha != 0)
+{
+    float new_alpha = Mathf.Lerp(interact_UI.alpha, 0, 0.1f);
+
+    if (new_alpha < 0.05f)
     {
-        float new_alpha = Mathf.Lerp(interact_UI.alpha, 0, 0.1f);
-
-        if (new_alpha < 0.05f)
-        {
-            new_alpha = 0;
-        }
-
-        interact_UI.alpha = new_alpha;
+        new_alpha = 0;
     }
+
+    interact_UI.alpha = new_alpha;
+}
 ```
 
 I have put this code in with the rest of the switch logic and the alpha is updated every update. The show ui boolean is updated in OnTriggetEnter and OnTriggerExit so the UI is shown when the player is inside the trigger. The boolean is also set to false when the X button is pressed, since the player doesn't need to know the information anymore. 
@@ -107,20 +107,20 @@ I have put this code in with the rest of the switch logic and the alpha is updat
 I have setup the cutscenes to have five different states, these are represented in the enum below:
 
 ```c#
-    public enum CutsceneState
-    {
-        NONE,
-        MOVE_TO_SWITCH,
-        PRESS_SWITCH,
-        MOVE_TO_DOOR,
-        OPEN_DOOR,
-        MOVE_BACK
-    }
+public enum CutsceneState
+{
+    NONE,
+    MOVE_TO_SWITCH,
+    PRESS_SWITCH,
+    MOVE_TO_DOOR,
+    OPEN_DOOR,
+    MOVE_BACK
+}
 
-    public Transform player_target;
-    public Transform switch_camera_target;
-    public Transform door_camera_target;
-    public bool camera_return_to_start_position;
+public Transform player_target;
+public Transform switch_camera_target;
+public Transform door_camera_target;
+public bool camera_return_to_start_position;
 ```
 
 States:
