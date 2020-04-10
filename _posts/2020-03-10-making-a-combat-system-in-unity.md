@@ -19,7 +19,7 @@ The way I am registering hits is by using triggers; if something enters the trig
 
 There will be a similar setup on the enemy Slime. On each of the 3 colliders (one for each hand and the sword) there is an attack manager script which will attack the relevant objects if needed. To test this, I created a blank cube and added a new script called Slime.
 
-```C#
+```c#
 private void OnTriggerStay(Collider other)
 {
     Slime enemy = other.gameObject.GetComponent<Slime>();
@@ -60,7 +60,7 @@ Now that my player can attack, they need something to attack. I improved the loo
 
 <img src="{{ site.baseurl }}/assets/Blog/GPCombat/slime.png"/>
 
-```C#
+```c#
 private void OnTriggerStay(Collider other)
 {
     if (other.gameObject.tag.Equals("Player"))
@@ -91,7 +91,7 @@ Starting size is a size variable and determines how big the slime should be at t
 
 On awake I setup the health of the slime to be baseHealth * ((int)startSize + 1) meaning large slimes have more health than smaller slimes. When the slimes health gets smaller than 0, if the size isn't small, I call the Split() function as show below:
 
-```C#
+```c#
 void Split()
 {
     Slime obj_1 = Instantiate(this);
@@ -122,7 +122,7 @@ This function instantiates two new slimes, a size down from the current size, an
 
 The final major feature to implement is the slime movement, I first setup a patrol area (using a central position and a size) then got the slimes to randomly chose a position in that area and move towards it. The slimes move by jumping, they move continuously forward as they jump and then are delayed after they land before they can jump again. Here is the movement for my slimes:
 
-```C#
+```c#
 void Move(Vector3 direction)
 {
     Vector3 rotation = Quaternion.Lerp(
@@ -164,5 +164,5 @@ I created a simple death particle of a bunch of cubes which I instantiate when a
 The final touch I added was adding some UI to show the health of the slimes (above their heads) and the player (top right).
 
 <div class="iframe-container">
-<iframe src="https://youtu.be/cLCNPkS0cgQ" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/cLCNPkS0cgQ" frameborder="0" allowfullscreen></iframe>
 </div>
