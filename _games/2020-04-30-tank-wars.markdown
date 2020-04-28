@@ -11,7 +11,7 @@ download-location: ""
 tags: [Student Project, LLP, The Shining, Coursework, C++, Group Project]
 ---
 
-<img src="{{ site.baseurl }}/assets/TankWars/gameScreenshot.png"/>
+<img src="{{ site.baseurl }}/assets/TankWars/game_screenshot.png"/>
 
 <h3>Brief</h3>
 
