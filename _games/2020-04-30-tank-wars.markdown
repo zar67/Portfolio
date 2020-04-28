@@ -1,0 +1,31 @@
+---
+layout: game
+title:  "Tank Wars"
+icon: "TankWars/icon.png"
+date:   2020-04-30 12:00:00 +0000
+status: "Finished"
+software-used: "CLion, GitKraken, GitHub"
+languages-used: C++
+textures: <a href="https://www.kenney.nl/" target="_blank">Kenney</a>
+download-location: ""
+tags: [Student Project, LLP, The Shining, Coursework, C++, Group Project]
+---
+
+<img src="{{ site.baseurl }}/assets/TankWars/gameScreenshot.png"/>
+
+<h3>Brief</h3>
+
+Tank Wars is a multiplayer RPG where player have to defeat all the other players by managing their tanks and destroying the enemy base camps. The game features a grid based map that tanks can move on and different unit types with different stats.
+
+This task was a group project to create a networked turn-based game and to also implement threading.
+
+For this game, I implemented most of the networking and UI. My development process and more information can be found on my devlog <a href="https://zar67.github.io/Portfolio/blog.html#Tank%20Wars%20Devlog">here</a>.
+
+<h3>Demo Video</h3>
+<video controls>
+  <source src="{{ site.baseurl }}/assets/TankWars/video.mp4" type="video/mp4">
+</video>
+
+<br>
+<h3>Playable EXE</h3>
+<a class="page-link" target="_blank" href="{{site.baseurl}}/assets/TankWars/TankWars.zip"><i class="fas fa-file-archive fa-3x nav-image"></i></a>

@@ -3,7 +3,6 @@ layout: game
 title:  "Tile Tap"
 date:   2019-08-30 10:00:00 +0000
 icon: "TileTap/logo.png"
-description: Tile Tap is a game where you tap on tiles in order to collect resources and make buildings, in order to collect more resources...
 status: "Finished"
 software-used: "Unity, Visual Studio"
 languages-used: C#

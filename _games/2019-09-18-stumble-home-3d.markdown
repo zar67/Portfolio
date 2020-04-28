@@ -3,7 +3,6 @@ layout: game
 title:  "Stumble Home 3D"
 icon: "StumbleHome3D/stumble-home-3D.png"
 date:   2019-09-18 10:00:00 +0000
-description: My recreation of Stumble Home in 3D. I wanted to work on my 3D Unity skils and so decided to try and improve Stumble Home and learn some things along the way.
 status: "Finished"
 software-used: "Unity, Visual Studio"
 languages-used: C#

@@ -3,7 +3,6 @@ layout: game
 title:  "Stumble Home"
 icon: "StumbleHome/stumble-home.png"
 date:   2019-01-25 10:00:00 +0000
-description: My submission for the 2019 Global Game Jam. I participated in a small team, where I worked on the code of the game while others worked on the art, audio and gameplay design.
 status: "Demo"
 software-used: "Unity, Photoshop, Visual Studio"
 languages-used: C#

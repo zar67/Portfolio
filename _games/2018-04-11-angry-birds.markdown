@@ -3,13 +3,12 @@ layout: game
 title:  "Angry Birds"
 icon: "AngryBirds/angry-birds.jpg"
 date:   2018-04-11 10:00:00 +0000
-description: An Angry Birds recreation made as my second piece of coursework in a year 1 module. My additions to this project above the specification include the use of structures and a basic (and very buggy) physics simulation built from scratch, all in C++.
 status: "Demo"
 software-used: "CLion, GitKraken, GitHub"
 languages-used: C++
 textures: <a href="https://www.kenney.nl/" target="_blank">Kenney</a>
 download-location: <a href="https://zoerowbotham.itch.io/angry-birds" target="_blank">zoerowbotham.itch.io</a>
-tags: [Student Project, Angry Birds, Coursework, C++]
+tags: [Student Project, ESD, Angry Birds, Coursework, C++]
 ---
 
 This Angry Birds remake was my second piece of coursework for my first year of university. I had to make a simple game where you could catapault an object into something else to make it disappear; I expanded on this by creating structures and a very simple (and somewhat buggy) physics simulation to handle the collisions and the resolutions. 

@@ -3,13 +3,12 @@ layout: game
 title:  "Block Breaker"
 icon: "BlockBreaker/block-breaker.jpg"
 date:   2019-03-11 10:00:00 +0000
-description: A simple block breaking game created in tutorials as my first ever game project in C++. The ball bounces around the screen, breaking blocks as it goes. All code created in C++ with help from an OpenGL Game Framework.
 status: "Finished"
 software-used: "CLion, GitKraken, GitHub"
 languages-used: C++
 textures: <a href="https://www.kenney.nl/" target="_blank">Kenney</a>
 download-location: <a href="https://zoerowbotham.itch.io/block-breaker" target="_blank">zoerowbotham.itch.io</a>
-tags: [Student Project, Breakout, Arkanoid, C++]
+tags: [Student Project, ESD, Breakout, Arkanoid, C++]
 ---
 
 Block breaker is a small, simple game I made as part of my first year in order to help me learn C++ and the OpenGL Game Framework used in my first year. The game has blocks which when destroyed will give the player points. Blocks are randomly coloured and some will release power ups that allow the player to shoot bullets for a limited time.

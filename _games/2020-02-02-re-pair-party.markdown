@@ -3,7 +3,6 @@ layout: game
 title:  "Re-Pair Party"
 icon: "Re-Pair-Party/logo.png"
 date:   2020-02-02 10:00:00 +0000
-description: My submission for the 2020 Global Game Jam, a 2-4 player party game where you re-pair to bluetooth speakers and dance your way to victory!
 status: "Finished"
 software-used: "Unity, Aesprite, Visual Studio, GitKraken, GitHub"
 languages-used: C#
