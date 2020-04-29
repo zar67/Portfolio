@@ -20,6 +20,6 @@ Overall I'm pretty happy with the game we've created, we managed our time better
 
 Here is a demo video of our game:
 
-<video controls>
-  <source src="{{ site.baseurl }}/assets/video.mp4" type="video/mp4">
-</video>
+<div class="iframe-container">
+<iframe src="https://www.youtube.com/embed/zkCfj4FR3hE" frameborder="0" allowfullscreen></iframe>
+</div>

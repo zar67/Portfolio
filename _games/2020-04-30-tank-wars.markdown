@@ -22,9 +22,9 @@ This task was a group project to create a networked turn-based game and to also 
 For this game, I implemented most of the networking and UI. My development process and more information can be found on my devlog <a href="https://zar67.github.io/Portfolio/blog.html#Tank%20Wars%20Devlog">here</a>.
 
 <h3>Demo Video</h3>
-<video controls>
-  <source src="{{ site.baseurl }}/assets/TankWars/video.mp4" type="video/mp4">
-</video>
+<div class="iframe-container">
+<iframe src="https://www.youtube.com/embed/zkCfj4FR3hE" frameborder="0" allowfullscreen></iframe>
+</div>
 
 <br>
 <h3>Playable EXE</h3>
