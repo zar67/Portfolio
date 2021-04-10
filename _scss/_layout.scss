@@ -206,6 +206,21 @@
     }
 }
 
+.blog-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid $background-lighter;
+
+        img {
+            width: 30%;
+        }
+    }
+}
+
 .post-meta {
     font-size: $base-font-size;
     text-align: center;
