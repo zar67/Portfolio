@@ -46,8 +46,8 @@
     font-weight: bold;
     font-size: 30px;
     padding: 0 20px;
-    float:left;
     color: $brand-color;
+    text-align: center;
 
     line-height: 50px;
     letter-spacing: -1px;
@@ -56,17 +56,12 @@
 
 .site-nav {
     list-style: none;
-    float: left;
     line-height: 56px;
-    
+    text-align: center;
+
     li {
         display: inline-block;
         margin: 0 10px;
-
-        // Gaps between nav items, but not on the last one
-        &:not(:last-child) {
-            margin-right: 10px;
-        }
     }
 
     .page-link {
@@ -116,6 +111,10 @@
     }
 }
 
+.contact-info {
+    text-align: center;
+}
+
 /**
  * Site footer
  */
@@ -137,7 +136,7 @@
 
 .page-content {
     padding: 20px 0;
-    padding-top: 80px;
+    padding-top: 125px;
 
     @include media-query($on-palm) {
         padding-top: 120px;
@@ -202,7 +201,8 @@
     list-style: none;
 
     > li {
-        margin-bottom: 0;
+        margin-bottom: 10px;
+        border-bottom: 2px solid $background-lighter;
     }
 }
 
@@ -220,12 +220,14 @@
     font-size: 24px;
 }
 
-.post-category {
+.post-date {
     font-size: $base-font-size;
-    text-align: center;
-    float: right;
-    color: $text-color;
-    margin-top: 15px;
+    color: $background-lighter;
+    font-weight: bold;
+}
+
+.post-abstract {
+    margin-bottom: 10px;
 }
 
 /**
@@ -236,13 +238,13 @@
     .games-list {
         list-style: none;
         margin: auto;
+        text-align: center;
 
         > li {
-            margin: auto 10px;
             display: inline-block;
             vertical-align: top;
             min-width: 200px;
-            width: 45%;
+            width: 30%;
             margin-bottom: $spacing-unit;
         }
     }
@@ -278,7 +280,7 @@
 .games-image {
     display: block;
     width: 100%;
-    margin: 5px auto;
+    margin: auto;
 
     background-color: $text-color;
     border: 4px solid #fff;

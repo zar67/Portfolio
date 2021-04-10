@@ -19,8 +19,7 @@ Our group has decided to make a top-down roguelike where to win the player has t
 * Psycho axe man chasing you around the hotel
 * Rooms have different realities of time, which get more warped as the player progresses
 
-We decided on the main points we wanted to talk about and split the presentation up between us. 
-This is the [presentation](https://docs.google.com/presentation/d/1YK8DbGw7CCsGgpeqGncO-InYd9PagCdzP7XbGfi9FSs/edit#slide=id.g6b06c79bd7_1_0) that we showed.
+We decided on the main points we wanted to talk about and split the presentation up between us.
 
 We were given some pointers and things to think about after presenting our game to solidify our game. The main thing we were questioned on was the replay ability of our game, random generation does not always lead to exciting new gameplay. We decided that having powerups in the game that could be kept after death would encourage the player to replay the game, with new abilities to make the game easier. 
 

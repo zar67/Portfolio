@@ -24,13 +24,13 @@ So to start off with we setup the chat room tutorial that came with the networki
 We then implemented our messages enum and setup some encode and decode functions to send the data across. Eventually we were able to setup a system that recieved the console commands #move, #attack and #buy. Then when the user entered #endturn, all the actions they had entered would be sent to the server, as seen below.
 
 Client:
-<center><img src="{{ site.baseurl }}/assets/console_client.png" alt="base uml" style="height: 200px;" /></center><br>
+<center><img src="{{ site.baseurl }}/assets/TankWars/console_client.png" alt="base uml" style="height: 200px;" /></center><br>
 
 Server:
-<center><img src="{{ site.baseurl }}/assets/console_server.png" alt="base uml" style="height: 200px;" /></center><br>
+<center><img src="{{ site.baseurl }}/assets/TankWars/console_server.png" alt="base uml" style="height: 200px;" /></center><br>
 
 We encode these messages by using these structs to store the data we want to encode and passing that to our encodeMessage function which takes the data and turns it into a vector<char>
 
-<center><img src="{{ site.baseurl }}/assets/action_structs_uml.png" alt="action structs" style="height: 200px;" /></center><br>
+<center><img src="{{ site.baseurl }}/assets/TankWars/action_structs_uml.png" alt="action structs" style="height: 200px;" /></center><br>
 
 After implementing this, we realised that having some UI and something rendering to the screen would be useful moving forward, so next I will be setting up the UI system, similar to the one I created for The Shining game.

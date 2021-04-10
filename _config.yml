@@ -43,6 +43,8 @@ links:
 collections:
   games:
     output: true
+  blogs:
+    output: true
 
 sass:
   sass_dir: _scss

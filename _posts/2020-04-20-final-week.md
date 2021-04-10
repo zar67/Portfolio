@@ -10,13 +10,13 @@ It's the final week and while most of the large technical aspects of the game ha
 Since last time I've implemented some more UI to help display unit information about the units as shown below:
 
 <center>
-    <img src="{{ site.baseurl }}/assets/unit_ui_stats.png" alt="unit actions" style="height: 400px;" />
+    <img src="{{ site.baseurl }}/assets/TankWars/units_ui_stats.png" alt="unit actions" style="height: 300px;" />
 </center>
 
 The red squares show where the unit can move and on the left shows the current stats on the unit that are helpful for the player to know. Also, when an enemy unit comes into attack range, the tile turns green to show the player they're attackable.
 
 <center>
-    <img src="{{ site.baseurl }}/assets/shop_ui_stats.png" alt="unit actions" style="height: 400px;" />
+    <img src="{{ site.baseurl }}/assets/TankWars/shop_ui_stats.png" alt="unit actions" style="height: 400px;" />
 </center>
 
 I have also added to the shop, to show the stats of a unit before the player buys it. 

@@ -59,6 +59,6 @@ void GCNetClient::endTurn()
 As you can see each action that has taken place is sent to the server (and then sent on to all the other clients) and the actions vector is cleared of the actions. After this, we also tell the server to end the current player's turn, the server then calculates the id of the new player and sends a PLAYER_START_TURN message to everyone. The PLAYER_START_TURN message is send with the id of the player whose turn it is, and this is sent to everyone so that we can display who's turn it is on the the screen as shown below:
 
 <center>
-    <img src="{{ site.baseurl }}/assets/player_1.png" alt="player 1" style="height: 200px;" />
-    <img src="{{ site.baseurl }}/assets/player_2.png" alt="player 2" style="height: 200px;" />    
+    <img src="{{ site.baseurl }}/assets/TankWars/player_1.png" alt="player 1" style="height: 250px;" />
+    <img src="{{ site.baseurl }}/assets/TankWars/player_2.png" alt="player 2" style="height: 250px;" />    
 </center><br>
