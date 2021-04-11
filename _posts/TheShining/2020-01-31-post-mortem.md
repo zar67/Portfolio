@@ -15,7 +15,6 @@ I think in order to improve we could've started planning and using Trello earlie
 
 Here is a video of our game:
 
-
 <video controls>
   <source src="{{ site.baseurl }}/assets/Blog/ShiningDevlog/video.mp4" type="video/mp4">
 </video>

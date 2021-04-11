@@ -7,7 +7,7 @@ category: [The Shining Devlog]
 
 <img src="{{ site.baseurl }}/assets/Blog/ShiningDevlog/the_shining_poster.jpg" alt="book cover"/>
 
-Our brief for our next LLP game is to create a game based on the 1980 film The Shining. In the lab session we watched the film and during the week were placed into our groups with the task of presenting our game idea for it to be greenlit. 
+The next game brief for our LLP module is to create a game based on the 1980 film The Shining. In the lab session we watched the film and during the week were placed into our groups with the task of presenting our game idea for it to be greenlit. 
 
 Our group has decided to make a top-down roguelike where to win the player has to escape a hotel with randomly generated rooms and monsters. We decided on the major features we wanted in our game:
 * Top-down roguelike
@@ -19,6 +19,7 @@ Our group has decided to make a top-down roguelike where to win the player has t
 * Psycho axe man chasing you around the hotel
 * Rooms have different realities of time, which get more warped as the player progresses
 
+<br>
 We decided on the main points we wanted to talk about and split the presentation up between us.
 
 We were given some pointers and things to think about after presenting our game to solidify our game. The main thing we were questioned on was the replay ability of our game, random generation does not always lead to exciting new gameplay. We decided that having powerups in the game that could be kept after death would encourage the player to replay the game, with new abilities to make the game easier. 
@@ -31,6 +32,7 @@ The main points we received that would be good were:
 * Clear a room of enemies before moving on 
 * Examples of puzzles
 
+<br>
 We then defined the main features of our game and who wanted to implement them:
 * Map Generation
 * UI
@@ -42,5 +44,6 @@ We then defined the main features of our game and who wanted to implement them:
 * Game States
 * Shop
 
+<br>
 I have chosen to implement the Map Generation and the UI and have already started to formulate ideas on how to do this.
 To be continued...

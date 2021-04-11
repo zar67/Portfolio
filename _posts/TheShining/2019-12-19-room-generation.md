@@ -8,14 +8,16 @@ category: [The Shining Devlog]
 After spending some time thinking about how I wanted to generate the rooms I came up with a basic algorithm, derived from previous projects, that I could use.
 
 The brief algorithm for setting up the random room generation is:
-* Generate starting room, with all 4 doors
-* Create a queue of rooms to generate based on open doors
-* For each room in the queue
-    * Check surrounding rooms for doors
-    * Select the required doors
-    * Randomly generate a room with the correct doors
-    * Add new rooms to generate to queue
-* Generate mini map
+```
+  Generate starting room, with all 4 doors
+  Create a queue of rooms to generate based on open doors
+  For each room in the queue
+      Check surrounding rooms for doors
+      Select the required doors
+      Randomly generate a room with the correct doors
+      Add new rooms to generate to queue
+  Generate mini map
+```
 
 With this algorithm I can start to make the map of the game. There will be two main classes I need to do this: Map and Room.
 
@@ -35,7 +37,7 @@ RoomType determines what should be put into the room, normal rooms will have ene
   };
 ```
 
-The locations of the rooms to be generated will be help in a std::queue. I will need an x and y index to access the room since the Rooms array in Map will be 2D.
+The locations of the rooms to be generated will be held in a std::queue. I will need an x and y index to access the room since the Rooms array in Map will be 2D.
 For example, this is how the queue will be setup, and how the first rooms to generate will be added.
 
 ```cpp
