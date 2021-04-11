@@ -11,11 +11,13 @@ Things that went well:
 * We successfully learnt about and implemented a networked multiplayer game where players on the same internet connected can connect and play.
 * Successfully created a strategic turn based game for 2-4 players.
 
+<br>
 What didn't go well:
 * Slightly buggy networking: We realised too late into development that using the clientUID wasn't the best way to identify different players, since if a client disconnects and reconnects they have a different UID, meaning that our system breaks. 
 * We didn't implement everything that we wanted to, some of the extra features we wanted were: animations, end of turn transitions and buildings to generate more currency per turn.
 * The game could do with more polishing, like animations and more gameplay features to make the game more competitive and fun.
 
+<br>
 Overall I'm pretty happy with the game we've created, we managed our time better on this task and managed to implement all the major features needed for the game. 
 
 Here is a demo video of our game:
