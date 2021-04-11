@@ -7,7 +7,9 @@ category: [Basic Reb0rn Devlog]
 
 <img src="{{ site.baseurl }}/assets/Blog/BasicRebornDevlog/book_cover.jpg" alt="book cover"/>
 
-We were given the book [Write Your Own Adventure: Programs for You Microcomputer](https://www.amazon.co.uk/Write-Your-Own-Adventure-Microcomputer/dp/0686878329) in order to reproduce the text adventure inside using the BASIC implementation. This took at least 3 hours to write and fix, copying line by line of code filled with one letter variables.
+As part of our ESD module at univeristy we were given the book [Write Your Own Adventure: Programs for You Microcomputer](https://www.amazon.co.uk/Write-Your-Own-Adventure-Microcomputer/dp/0686878329) in order to reproduce the text adventure inside using the BASIC implementation. 
+
+Our first task was to get the code in the book up and running using an online [BASIC Emulator](https://www.calormen.com/jsbasic/). It took me about 3 hours to copy all the lines of code and get it up and running properly. The code was very terious to copy as it is full of one letter variables.
 
 My biggest mistake was not reading the little information bubbles to the side of the code that helpfully gave you information on changing the code for the type of emulator you're using or explaining how the code works.
 
