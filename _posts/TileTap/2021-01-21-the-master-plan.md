@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tile Tap 2 - The Master Plan
+title: Project Introduction
 date: 2021-01-21 16:00:00
 category: [Tile Tap Devlog]
 ---
