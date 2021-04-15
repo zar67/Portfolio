@@ -21,7 +21,6 @@ My use of classes for the different game data aspects (room, actions and objects
 
 However, the game runs smoothly and I have fixed the known bugs with the game.
 
-<br>
 The main changes I made were:
 * Changed "CARRYING?" to "INVENTORY"
 * Changed "CLIMB ROPE" to "CLIMB TREE" since that's what people naturally assumed the command was.
@@ -32,6 +31,5 @@ The main changes I made were:
 * When in the room with the bats and the ghosts, the player can leave the room and vanquish the enemies only. In the original game, these rooms were game ending if you didn't have the correct objects. Now the bats and ghosts simply block the player from progressing until they are removed.
 * In order to complete the game, you have to collect all of the treasures instead of all the items. This makes more sense and doesn't change the gameplay since the player has to collect most of the objects in order to get all the treasures.
 
-<br>
 <h3>Structure Improvments</h3>
 In order to improve the code, adding the action commands to the JSON file and parsing them when loading the data would make the code much simplier; it would also allow me to create a range of text adventure games using JSON files of the same struture.

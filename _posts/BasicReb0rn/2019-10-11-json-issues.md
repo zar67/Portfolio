@@ -7,7 +7,6 @@ category: [Basic Reb0rn Devlog]
 
 In order to get the data for the rooms, objects and actions (words) into the game, I decided to use JSON. You can see below the structure for the three json objects I will need. I will use 3 files, one for actions, one for objects and one for rooms.
 
-<br>
 <h3>Actions</h3>
 ```json
     ACTION
@@ -28,7 +27,6 @@ For the actions, I need the following information:
 * Required Room - needed if the action can only be called from a specific room (-1 means any room).
 * Response - the output that should be given if the action is completed.
 
-<br>
 <h3>Object</h3>
 ```json
     OBJECT
@@ -47,7 +45,6 @@ For the objects:
 * Collectible - Whether the object can be picked up and put into the player's inventory.
 * Hidden - Whether the object is hidden (used for the key and the candle).
 
-<br>
 <h3>Room</h3>
 ```json  
     ROOM
