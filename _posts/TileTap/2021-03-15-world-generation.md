@@ -31,7 +31,7 @@ end func
 ```
 
 The values that can be changed in the inspector modify how the generate function works:
-<img src="{{ site.baseurl }}/assets/blog/TileTap2/world-data-inspector.png" alt="world data values"/>
+<img src="{{ site.baseurl }}/assets/Blog/TileTap2/world-data-inspector.png" alt="world data values"/>
 
 <h3>TileData</h3>
 When the WorldData generates a new world it stores a list of tiles as TileData, the WorldData object does not handle the instantiating of the world, only generating the data for it and so holds the TileData it generates.
