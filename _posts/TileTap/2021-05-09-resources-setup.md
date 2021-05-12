@@ -25,7 +25,7 @@ Tiles that generate resources need to have a designated resource and a generatio
 
 In order to specify tiles that have a resource, I need to link a tile sprite to a resource and an amount, and so I added into the WorldSpriteData object this information.
 
-<img src="{{ site.baseurl }}/assets/blog/TileTap2/resources-sprite-data.png" alt="world data values" style="width: 800px;"/>
+<img src="{{ site.baseurl }}/assets/blog/TileTap2/resources-sprite-data.png" alt="resources sprite data" style="width: 800px;"/>
 
 I am thinking of reworking this at some point in the future, since it is not very user friendly and it may be beneficial to create individual tile objects (potentially included into the prefab or potentially on it's own) to handle this data in a better way.
 

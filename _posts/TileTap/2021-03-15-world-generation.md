@@ -31,7 +31,7 @@ end func
 ```
 
 The values that can be changed in the inspector modify how the generate function works:
-<img src="{{ site.baseurl }}/assets/Blog/TileTap2/world-data-inspector.png" alt="world data values"/>
+<img src="{{ site.baseurl }}/assets/Blog/TileTap2/world-data-inspector.png" alt="world data inspector"/>
 
 <h3>TileData</h3>
 When the WorldData generates a new world it stores a list of tiles as TileData, the WorldData object does not handle the instantiating of the world, only generating the data for it and so holds the TileData it generates.
@@ -52,7 +52,7 @@ Along with the coordinates there is a HexDirections enum is used to determine ne
 <h4>HexMatrics</h4>
 The HexMatrics class determines the size of the tile using the outer radius and calculating the inner radius.
 
-<img src="{{ site.baseurl }}/assets/blog/TileTap2/hex-matrics.png" alt="world data values"/>
+<img src="{{ site.baseurl }}/assets/blog/TileTap2/hex-matrics.png" alt="hex matrics"/>
 
 ```c#
 public HexMatrics(float outerRadius)
@@ -66,4 +66,4 @@ public HexMatrics(float outerRadius)
 The WorldData scriptable object holds all the information about the generated tiles, the WorldInstaniater component uses the WorldData to instantiate a tile prefab and create the world in the scene.
 
 Here is the world instantiated into the scene, currently I make each land chunk a random terrain type this gives the illusion of biomes, however I will be implementing a more realistic biomes system.
-<img src="{{ site.baseurl }}/assets/blog/TileTap2/world-map-generation.png" alt="world data values"/>
+<img src="{{ site.baseurl }}/assets/blog/TileTap2/world-map-generation.png" alt="world map generation"/>
