@@ -4,6 +4,7 @@ title:  "Basic Reb0rn"
 icon: "BasicReb0rn/gameplay.jpg"
 date:   2019-10-25 10:00:00 +0000
 status: "Demo"
+publish: true
 software-used: "CLion, GitKraken, GitHub"
 languages-used: C++
 textures: ""

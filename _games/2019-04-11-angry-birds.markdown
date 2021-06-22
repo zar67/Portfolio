@@ -2,8 +2,9 @@
 layout: game
 title:  "Angry Birds"
 icon: "AngryBirds/angry-birds.jpg"
-date:   2018-04-11 10:00:00 +0000
+date:   2019-04-11 10:00:00 +0000
 status: "Demo"
+publish: true
 software-used: "CLion, GitKraken, GitHub"
 languages-used: C++
 textures: <a href="https://www.kenney.nl/" target="_blank">Kenney</a>

@@ -4,6 +4,7 @@ title:  "Ping"
 icon: "Ping/ping.jpg"
 date:   2019-01-21 10:00:00 +0000
 status: "Demo"
+publish: true
 software-used: "CLion, GitKraken, GitHub"
 languages-used: C++
 textures: <a href="https://www.kenney.nl/" target="_blank">Kenney</a>

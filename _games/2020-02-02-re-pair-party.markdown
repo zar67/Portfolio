@@ -4,6 +4,7 @@ title:  "Re-Pair Party"
 icon: "Re-Pair-Party/logo.png"
 date:   2020-02-02 10:00:00 +0000
 status: "Finished"
+publish: true
 software-used: "Unity, Aesprite, Visual Studio, GitKraken, GitHub"
 languages-used: C#
 textures: "Luke Eyre"

@@ -4,6 +4,7 @@ title:  "Tank Wars"
 icon: "TankWars/icon.png"
 date:   2020-04-30 12:00:00 +0000
 status: "Finished"
+publish: true
 software-used: "CLion, GitKraken, GitHub"
 languages-used: C++
 textures: <a href="https://www.kenney.nl/" target="_blank">Kenney</a>
