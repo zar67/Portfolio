@@ -297,8 +297,8 @@
     width: 100%;
     margin: auto;
 
-    background-color: $text-color;
-    border: 4px solid #fff;
+    background-color: $background-lighter;
+    border: 4px solid $background-lighter;
     border-radius: 20px;
 
     &:hover {
