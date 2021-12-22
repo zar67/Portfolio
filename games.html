@@ -4,47 +4,17 @@ title: Games
 ---
 
 <div class="games">
-  <a id="student-projects" class="anchor"></a>
-  <h2 class="page-heading">Student Projects</h2>
   <ul class="games-list">
     {% for game in site.games reversed %}
-      {% if game.tags contains 'Student Project' %}
-        {% if game.publish == true %}
-          <li>
-            <h2 class="games-heading">{{game.title}}</h2>
-            <a class="games-link" href="{{site.baseurl}}{{ game.url }}"><img src="{{site.baseurl}}/assets/{{game.icon}}" class="games-image"></a>
-          </li>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-  </ul>
-
-  <a id="personal-projects" class="anchor"></a>
-  <h2 class="page-heading">Personal Projects</h2>
-  <ul class="games-list">
-    {% for game in site.games reversed %}
-      {% if game.tags contains 'Personal Project' %}
-        {% if game.publish == true %}
-          <li>
-            <h2 class="games-heading">{{game.title}}</h2>
-            <a class="games-link" href="{{site.baseurl}}{{ game.url }}"><img src="{{site.baseurl}}/assets/{{game.icon}}" class="games-image"></a>
-          </li>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-  </ul>
-
-  <a id="game-jams" class="anchor"></a>
-  <h2 class="page-heading">Game Jams</h2>
-  <ul class="games-list">
-    {% for game in site.games reversed %}
-      {% if game.tags contains 'Game Jam' %}
-        {% if game.publish == true %}
-        <li>
-          <h2 class="games-heading">{{game.title}}</h2>
-          <a class="games-link" href="{{site.baseurl}}{{ game.url }}"><img src="{{site.baseurl}}/assets/{{game.icon}}" class="games-image"></a>
+      {% if game.publish == true %}
+        <li class="games-container">
+          <img src="{{site.baseurl}}/assets/{{game.icon}}" class="games-image">
+          <a class="games-link" href="{{site.baseurl}}{{ game.url }}">
+            <div class="games-overlay">
+              <h2 class="games-heading">{{game.title}}</h2>
+            </div>
+          </a>
         </li>
-        {% endif %}
       {% endif %}
     {% endfor %}
   </ul>

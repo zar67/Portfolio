@@ -4,11 +4,15 @@ title: Devlogs
 ---
 
 <div class="games">
-  <ul class="blog-list">
+  <ul class="games-list">
     {% for blog in site.blogs reversed %}
-    <li>
-      <h2 class="games-heading">{{ blog.title }}</h2>
-      <a href="{{ site.baseurl }}/{{blog.url}}"><img src="{{site.baseurl}}/{{blog.image}}" class="games-image"></a>
+    <li class="games-container">
+      <img src="{{site.baseurl}}/{{blog.image}}" class="games-image">
+      <a class="games-link" href="{{ site.baseurl }}/{{blog.url}}">
+        <div class="games-overlay">
+          <h2 class="games-heading">{{blog.title}}</h2>
+        </div>
+      </a>
     </li>
     {% endfor %}
   </ul>

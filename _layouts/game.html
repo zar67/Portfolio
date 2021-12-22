@@ -26,6 +26,12 @@ layout: default
           <td>{{page.languages-used}}</td>
       </tr>
       {% endif %}
+      {% if page.git-repository != "" %}
+      <tr>
+          <th>Git Repository:</th>
+          <td>{{page.git-repository}}</td>
+      </tr>
+      {% endif %}
       {% if page.textures != "" %}
       <tr>
           <th>Artwork:</th>

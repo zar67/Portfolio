@@ -251,16 +251,67 @@
  * Games
  */
 
- .games {
+.games {
     .games-list {
         list-style: none;
 
-        > li {
+        .games-container {
+            position: relative;
             display: inline-block;
             vertical-align: top;
             min-width: 200px;
             width: 30%;
-            margin-bottom: $spacing-unit;
+            margin: 5px;
+
+            &:hover {
+                .games-overlay {
+                    opacity: 1;
+                }
+
+                .games-image {
+                    opacity: 0.3;
+                    border-color: $brand-color;
+                    background-color: $brand-color;
+                    transition: .5s ease;
+                }
+            }
+        }
+
+        .games-image {
+            height: 100%;
+            width: 100%;
+
+            background-color: $background-lighter;
+            border: 4px solid $background-lighter;
+            border-radius: 20px;
+        }
+
+        .games-link {
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            .games-overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+    
+                .games-heading {
+                    margin: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    font-style: normal;
+                }
+            }
         }
     }
 
@@ -269,7 +320,7 @@
         clear: both;
         text-align: center;
     
-        .games-list li {
+        .games-list .games-container {
             width: 55%;
         }
     }
@@ -281,31 +332,6 @@
     font-weight: bold;
     color: $text-color;
     margin-bottom: 10px;
-}
-
-.games-heading {
-    color: $brand-color;
-    border-radius: 20px;
-    text-align: center;
-    font-size: 10px;
-    font-weight: bold;
-    margin-bottom: 0;
-}
-
-.games-image {
-    display: block;
-    width: 100%;
-    margin: auto;
-
-    background-color: $background-lighter;
-    border: 4px solid $background-lighter;
-    border-radius: 20px;
-
-    &:hover {
-        border-color: $brand-color;
-        background-color: $brand-color;
-        @include easeOut();
-    }
 }
 
 .games-tags {
@@ -321,6 +347,17 @@
     margin: 3px 0;
     border-radius: 5px;
     background: $background-darker;
+}
+
+.games-heading {
+    height: 100%;
+    width: 100%;
+    color: $brand-color;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 0;
 }
 
 /**
