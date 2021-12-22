@@ -12,7 +12,7 @@ download-location: <a href="https://globalgamejam.org/2019/games/stumble-home" t
 tags: [GGJ2019, Game Jam, Unity, C#]
 ---
 
-This was my first ever participation in a Global Game Jam and I worked with a small team of friends. Over the weekend we were lucky enough to have the Games Technology computer lab all weekend to work in (and were provided with pizza from our lecturers). I had alot of fun trying to make this game over the weekend and implemented all of the code.
+This was my first time participating in a Global Game Jam and I worked with a small team of friends. Over the weekend we were lucky enough to have the Games Technology computer lab all weekend to work in (and were provided with pizza from our lecturers). I had alot of fun trying to make this game over the weekend and implemented all of the code.
 
 The theme for the Game Jam was "What home means to you?". We came up with the idea that home is a place where you can always return to, no matter what. We loosly interpreted this idea into a game where you've stayed out late and you have to complete tasks and get to bed without waking up your parents or your baby sibling.
 
