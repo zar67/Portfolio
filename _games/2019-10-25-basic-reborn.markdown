@@ -8,8 +8,6 @@ publish: true
 software-used: "CLion, GitKraken, GitHub"
 languages-used: C++
 git-repository: <a href="https://github.com/zar67/LLP-basic-reb0rn" target="_blank">GitHub</a>
-textures: ""
-download-location: ""
 tags: [Student Project, LLP, BASIC, Coursework, C++]
 ---
 
