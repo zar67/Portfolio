@@ -7,7 +7,7 @@ status: "Finished"
 publish: true
 software-used: "Unity, Aesprite, Visual Studio, GitKraken, GitHub"
 languages-used: C#
-git-repository: <a href="https://github.com/zar67/GGJ-2020-re-pair-party" target="_blank">GitHub</a>
+code-repository: <a href="https://github.com/zar67/GGJ-2020-re-pair-party" target="_blank">GitHub</a>
 textures: "Luke Eyre"
 tags: [GGJ2020, Game Jam, Unity, C#, Group Project]
 ---

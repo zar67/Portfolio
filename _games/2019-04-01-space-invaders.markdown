@@ -8,7 +8,7 @@ publish: false
 software-used: "CLion, GitKraken, GitHub"
 languages-used: C++
 textures: <a href="https://www.kenney.nl/" target="_blank">Kenney</a>
-git-repository: <a href="https://github.com/zar67/ESD-invaders-of-the-earth" target="_blank">GitHub</a>
+code-repository: <a href="https://github.com/zar67/ESD-invaders-of-the-earth" target="_blank">GitHub</a>
 download-location: <a href="https://zoerowbotham.itch.io/spaceinvaders" target="_blank">zoerowbotham.itch.io</a>
 tags: [Student Project, ESD, Space Invaders, C++]
 ---
