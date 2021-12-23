@@ -7,6 +7,7 @@ status: "Demo"
 publish: true
 software-used: "CLion, GitKraken, GitHub"
 languages-used: C++
+git-repository: <a href="https://github.com/zar67/ESD-angry-birds" target="_blank">GitHub</a>
 textures: <a href="https://www.kenney.nl/" target="_blank">Kenney</a>
 download-location: <a href="https://zoerowbotham.itch.io/angry-birds" target="_blank">zoerowbotham.itch.io</a>
 tags: [Student Project, ESD, Angry Birds, Coursework, C++]

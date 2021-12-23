@@ -8,37 +8,37 @@ layout: default
     <p class="games-meta-date"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
     
     <table class="post-features">
-      {% if page.status != "" %}
+      {% if page.status != nil %}
       <tr>
           <th>Status: </th>
           <td>{{page.status}}</td>
       </tr>
       {% endif %}
-      {% if page.software-used != "" %}
+      {% if page.software-used != nil %}
       <tr>
           <th>Software: </th>
           <td>{{page.software-used}}</td>
       </tr>
       {% endif %}
-      {% if page.languages-used != "" %}
+      {% if page.languages-used != nil %}
       <tr>
           <th>Language:</th>
           <td>{{page.languages-used}}</td>
       </tr>
       {% endif %}
-      {% if page.git-repository != "" %}
+      {% if page.git-repository != nil %}
       <tr>
           <th>Git Repository:</th>
           <td>{{page.git-repository}}</td>
       </tr>
       {% endif %}
-      {% if page.textures != "" %}
+      {% if page.textures != nil %}
       <tr>
           <th>Artwork:</th>
           <td>{{page.textures}}</td>
       </tr>
       {% endif %}
-      {% if page.download-location != "" %}
+      {% if page.download-location != nil %}
       <tr>
           <th>Download Location:</th>
           <td>{{page.download-location}}</td>

@@ -1,13 +1,13 @@
 ---
 layout: game
 title:  "Basic Reb0rn"
-icon: "BasicReb0rn/icon.jpg"
 date:   2019-10-25 10:00:00 +0000
+icon: "BasicReb0rn/icon.jpg"
 status: "Demo"
 publish: true
 software-used: "CLion, GitKraken, GitHub"
 languages-used: C++
-git-repository: <a href="https://github.com/zar67/Basic-Reb0rn" target="_blank">GitHub</a>
+git-repository: <a href="https://github.com/zar67/LLP-basic-reb0rn" target="_blank">GitHub</a>
 textures: ""
 download-location: ""
 tags: [Student Project, LLP, BASIC, Coursework, C++]

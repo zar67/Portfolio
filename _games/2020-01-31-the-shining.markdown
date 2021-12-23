@@ -8,7 +8,7 @@ status: "Finished"
 publish: true
 software-used: "CLion, GitKraken, GitHub"
 languages-used: C++
-git-repository: <a href="https://github.com/zar67/The-Shining" target="_blank">GitHub</a>
+git-repository: <a href="https://github.com/zar67/LLP-the-shining" target="_blank">GitHub</a>
 textures: "Zoe Rowbotham, Thomas Maddams"
 download-location: ""
 tags: [Student Project, LLP, The Shining, Coursework, C++, Group Project]

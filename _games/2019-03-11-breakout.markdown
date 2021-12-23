@@ -8,6 +8,7 @@ publish: false
 software-used: "CLion, GitKraken, GitHub"
 languages-used: C++
 textures: <a href="https://www.kenney.nl/" target="_blank">Kenney</a>
+git-repository: <a href="https://github.com/zar67/ESD-i-want-to-break-free" target="_blank">GitHub</a>
 download-location: <a href="https://zoerowbotham.itch.io/block-breaker" target="_blank">zoerowbotham.itch.io</a>
 tags: [Student Project, ESD, Breakout, Arkanoid, C++]
 ---
