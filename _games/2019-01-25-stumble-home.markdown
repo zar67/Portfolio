@@ -3,7 +3,6 @@ layout: game
 title:  "Stumble Home"
 icon: "StumbleHome/stumble-home.png"
 date:   2019-01-25 10:00:00 +0000
-status: "Demo"
 publish: true
 software-used: "Unity, Photoshop, Visual Studio"
 languages-used: C#

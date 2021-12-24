@@ -3,7 +3,6 @@ layout: game
 title:  "Space Invaders"
 icon: "SpaceInvaders/space-invaders.jpg"
 date:   2019-04-01 10:00:00 +0000
-status: "Finished"
 publish: false
 software-used: "CLion, GitKraken, GitHub"
 languages-used: C++

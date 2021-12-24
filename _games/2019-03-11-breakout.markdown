@@ -3,7 +3,6 @@ layout: game
 title:  "Block Breaker"
 icon: "BlockBreaker/block-breaker.jpg"
 date:   2019-03-11 10:00:00 +0000
-status: "Finished"
 publish: false
 software-used: "CLion, GitKraken, GitHub"
 languages-used: C++
