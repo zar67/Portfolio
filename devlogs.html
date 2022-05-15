@@ -6,14 +6,16 @@ title: Devlogs
 <div class="games">
   <ul class="games-list">
     {% for blog in site.blogs reversed %}
-    <li class="games-container">
-      <img src="{{site.baseurl}}/{{blog.image}}" class="games-image">
-      <a class="games-link" href="{{ site.baseurl }}/{{blog.url}}">
-        <div class="games-overlay">
-          <h2 class="games-heading">{{blog.title}}</h2>
-        </div>
-      </a>
-    </li>
+      {% if blog.publish == true %}
+      <li class="games-container">
+        <img src="{{site.baseurl}}/{{blog.image}}" class="games-image">
+        <a class="games-link" href="{{ site.baseurl }}/{{blog.url}}">
+          <div class="games-overlay">
+            <h2 class="games-heading">{{blog.title}}</h2>
+          </div>
+        </a>
+      </li>
+      {% endif %}
     {% endfor %}
   </ul>
 </div>
