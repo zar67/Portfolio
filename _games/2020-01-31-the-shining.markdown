@@ -9,6 +9,7 @@ software-used: "CLion, GitKraken, GitHub"
 languages-used: C++
 code-repository: <a href="https://github.com/zar67/LLP-the-shining" target="_blank">GitHub</a>
 textures: "Zoe Rowbotham, Thomas Maddams"
+devlog-title: 2019-11-08-the-shining
 tags: [Student Project, LLP, The Shining, Coursework, C++, Group Project]
 ---
 

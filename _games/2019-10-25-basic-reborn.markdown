@@ -7,7 +7,7 @@ publish: true
 software-used: "CLion, GitKraken, GitHub"
 languages-used: C++
 code-repository: <a href="https://github.com/zar67/LLP-basic-reb0rn" target="_blank">GitHub</a>
-devlog: <a href="https://zar67.github.io/Portfolio/blog.html#Basic%20Reb0rn%20Devlog">Basic Reb0rn Devlog</a>
+devlog-title: 2019-10-01-basic-reborn
 tags: [Student Project, LLP, BASIC, Coursework, C++]
 ---
 

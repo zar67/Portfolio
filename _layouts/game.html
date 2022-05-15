@@ -38,10 +38,10 @@ layout: default
           <td>{{page.download-location}}</td>
       </tr>
       {% endif %}
-      {% if page.devlog != nil %}
+      {% if page.devlog-title != nil %}
       <tr>
           <th>Development Log:</th>
-          <td>{{page.devlog}}</td>
+          <td><a href="{% link _blogs/{{page.devlog-title}}.md %}">{{page.title}} Devlog</a></td>
       </tr>
       {% endif %}
   </table>

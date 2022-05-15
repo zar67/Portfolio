@@ -8,6 +8,7 @@ software-used: "Unity, Visual Studio"
 languages-used: C#
 textures: <a href="https://www.kenney.nl/" target="_blank">Kenney</a>
 download-location: <a href="https://play.google.com/store/apps/details?id=com.ZoeRowbotham.TileTap" target="_blank">Google Play Store</a>
+devlog-title: 2021-01-21-tile-tap
 tags: [Personal Project, Unity, C#]
 ---
 

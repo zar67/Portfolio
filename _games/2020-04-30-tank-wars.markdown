@@ -8,6 +8,7 @@ software-used: "CLion, GitKraken, GitHub"
 languages-used: C++
 code-repository: <a href="https://github.com/zar67/LLP-tank-wars" target="_blank">GitHub</a>
 textures: <a href="https://www.kenney.nl/" target="_blank">Kenney</a>
+devlog-title: 2020-03-06-tank-wars
 tags: [Student Project, LLP, The Shining, Coursework, C++, Group Project]
 ---
 
