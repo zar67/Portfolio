@@ -1,6 +1,6 @@
 ---
 layout: game
-title: "Procedural Flower Generation"
+title: "Procedural Flowers"
 icon: "ProceduralFlowers/icon.png"
 date: 2022-03-24 12:00:00 +0000
 publish: true
