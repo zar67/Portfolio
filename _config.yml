@@ -27,11 +27,11 @@ baseurl: "/Portfolio" # the subpath of your site, e.g. /blog
 url: "https://zar67.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 links:
-  - title: Games
+  - title: Projects
     url:  /games.html
     icon: <i class="fas fa-gamepad nav-image"></i>
     external: false
-  - title: Blog
+  - title: Devlogs
     url:  /blog.html
     icon: <i class="fas fa-comments nav-image"></i>
     external: false
