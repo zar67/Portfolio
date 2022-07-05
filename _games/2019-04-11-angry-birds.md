@@ -12,9 +12,11 @@ download-location: <a href="https://zoerowbotham.itch.io/angry-birds" target="_b
 tags: [Student Project, ESD, Angry Birds, Coursework, C++]
 ---
 
-This Angry Birds remake was my second piece of coursework for my first year of university. I had to make a simple game where you could catapault an object into something else to make it disappear; I expanded on this by creating structures and a very simple (and somewhat buggy) physics simulation to handle the collisions and the resolutions. 
+<img src="{{ site.baseurl }}/assets/AngryBirds/angry-birds-game.jpg"/>
 
-As the first time trying to implement physics into a game from scratch this task was very challenging to me, but I plan in future to try and enhance the game and improve the codebase to be cleaner, more readable and generally just better.
+This Angry Birds remake was my last piece of coursework for my first year of university. The task was to make a simplified Angry Birds replica where the player could catapault objects into other objects to destroy them. I decided to expand on this by creating structures and a very simple (and somewhat buggy) physics simulation to handle the collisions and the resolutions. 
+
+As the first time trying to implement physics into a game from scratch this task was very challenging to me, but I manages to implement a simple collision detection and response system, even if it's a bit buggy.
 
 As you can see in the video, the physics isn't perfect...
 
@@ -22,7 +24,6 @@ As you can see in the video, the physics isn't perfect...
   <source src="{{ site.baseurl }}/assets/AngryBirds/angry-birds-cover.mp4" type="video/mp4">
 </video>
 
-These screenshots show the 2 levels currently in the game. Each level has a number of pigs and some structures to hold them up.
+A physics component handles the velocity of the object and collisions are checked on an update. Collisions are detected through two shapes: a circle and a rectangle (an axis-aligned bounding box). Collision resolutions are handled based on the side of the shape that was hit as well as the velocity of both shapes. On reflection this could be improved by reflecting the velocity of the shapes, so the side of the collision is not required.
 
-<img src="{{ site.baseurl }}/assets/AngryBirds/angry-birds-game.jpg"/>
 <img src="{{ site.baseurl }}/assets/AngryBirds/angry-birds-game-2.jpg"/>
