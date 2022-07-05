@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text Adventure Framwork
+title: Text Adventure Framework
 date: 2021-12-23 18:00:00
 category: [Basic Reb0rn Devlog]
 ---
