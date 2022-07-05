@@ -38,6 +38,12 @@ layout: default
           <td>{{page.download-location}}</td>
       </tr>
       {% endif %}
+      {% if page.devlog-title != nil %}
+      <tr>
+          <th>Development Log:</th>
+          <td><a href="{{ site.baseurl }}/blogs/{{page.devlog-title}}.html">{{page.title}} Devlog</a></td>
+      </tr>
+      {% endif %}
   </table>
 </header>
 
