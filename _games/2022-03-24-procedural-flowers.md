@@ -10,6 +10,8 @@ code-repository: <a href="https://github.com/zar67/AT-procedural-generation" tar
 tags: [Student Project, AT, Coursework, Unity]
 ---
 
+<img src="{{ site.baseurl }}/assets/ProceduralFlowers/flower-field.png"/>
+
 One of the final tasks I worked on at UWE, Bristol was procedurally generating plants. I chose to generate flowers and to produce a tool that could create several different types of flowers. 
 
 This involved a lot of research into how flowers grow and are constructed including maths such as Fermat's spiral and the golden angle. 
@@ -18,8 +20,8 @@ This involved a lot of research into how flowers grow and are constructed includ
 
 I created a shape generation tool using splines to allow the user to create unique shape for petals and leaves. Then I created the generation tool which has many parameters for the user to play around with to create different types of flowers.
 
+Some examples of the parameters can be seen in the following image, but the full parameter list as well as more details can be found in the final report for this project, <a href="{{site.baseurl}}/assets/ProceduralFlowers/ProceduralFlowers-Report.pdf" target="_blank">here</a>.
+
+<img src="{{ site.baseurl }}/assets/ProceduralFlowers/parameters-example.png"/>
+
 More information in how I developed the tool can be found in the video logs <a href="https://youtube.com/playlist?list=PLFrr5q99QVCgQ9nvAoHRC83NKl4EfjXSu" target="_blank">here</a>.
-
-The final report of the project can be found <a href="{{site.baseurl}}/assets/ProceduralFlowers/ProceduralFlowers-Report.pdf" target="_blank">here</a>.
-
-<img src="{{ site.baseurl }}/assets/ProceduralFlowers/flower-field.png"/>
