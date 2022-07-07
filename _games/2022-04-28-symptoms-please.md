@@ -9,7 +9,7 @@ languages-used: C#
 tags: [Student Project, CGD, Coursework, Unity]
 ---
 
-Symptoms Please is the result of my final year project at UWE Bristol, it is a mobile game used to teach young people about STIs. 
+Symptoms Please is the result of my final year creative technologies project at UWE Bristol, it is a mobile game used to teach young people about STIs. 
 
 A video of the project can be seen <a href="https://youtu.be/Hir3TNHPba0" target="_blank">here</a>.
 

@@ -10,7 +10,7 @@ code-repository: <a href="https://github.com/zar67/AT-procedural-generation" tar
 tags: [Student Project, AT, Coursework, Unity]
 ---
 
-As part of my Advanced Technologies module we were tasked with procedurally generating plants, I chose to generate flowers and to produce a tool that could create several different types of flowers. 
+One of the final tasks I worked on at UWE, Bristol was procedurally generating plants. I chose to generate flowers and to produce a tool that could create several different types of flowers. 
 
 This involved a lot of research into how flowers grow and are constructed including maths such as Fermat's spiral and the golden angle. 
 
