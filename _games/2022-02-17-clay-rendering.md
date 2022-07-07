@@ -10,7 +10,7 @@ code-repository: <a href="https://github.com/zar67/AT-clay-rendering" target="_b
 tags: [Student Project, AT, Coursework, Unity, ShaderLab]
 ---
 
-As part of my Advanced Technologies module we were tasked with creating a realistic clay shader, the task was suggested by Aardman Animations to develop a way to create a realistic clay material for use in digital claymation. 
+As part of my third year of university I was tasked with creating a realistic clay shader, the task was suggested by Aardman Animations to develop a way to create a realistic clay material for use in digital claymation. 
 
 This task greatly challenged me as I was not familiar with shaders or graphics programming before this, except for the <a href="https://zar67.github.io/Portfolio/games/2021-11-18-firectx-fps.html">DirectX FPS</a> task we had been previously assigned. 
 
