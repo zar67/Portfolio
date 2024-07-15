@@ -3,7 +3,7 @@ layout: game
 title:  "Space Invaders"
 icon: "SpaceInvaders/space-invaders.jpg"
 date:   2019-04-01 10:00:00 +0000
-publish: false
+publish: true
 software-used: "CLion, GitKraken, GitHub"
 languages-used: C++
 textures: <a href="https://www.kenney.nl/" target="_blank">Kenney</a>

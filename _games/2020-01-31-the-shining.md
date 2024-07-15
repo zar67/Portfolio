@@ -4,7 +4,7 @@ title:  "The Shining"
 icon: "TheShining/Danny.png"
 date:   2020-01-31 10:00:00 +0000
 description: My second piece of coursework for my second year at university. A 2D rogue-like game inspired by the movie The Shining.
-publish: false
+publish: true
 software-used: "CLion, GitKraken, GitHub"
 languages-used: C++
 code-repository: <a href="https://github.com/zar67/LLP-the-shining" target="_blank">GitHub</a>

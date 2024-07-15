@@ -3,7 +3,7 @@ layout: game
 title:  "Stumble Home"
 icon: "StumbleHome/stumble-home.png"
 date:   2019-01-25 10:00:00 +0000
-publish: false
+publish: true
 software-used: "Unity, Photoshop, Visual Studio"
 languages-used: C#
 textures: <a href="https://globalgamejam.org/users/amythedolphin" target="_blank">Amy Dolphin</a>
