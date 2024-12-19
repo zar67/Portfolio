@@ -17,10 +17,10 @@ The final report of the project can be found <a href="{{site.baseurl}}/assets/Sy
 
 <h3>Demo Video</h3>
 <div class="iframe-container">
-    <iframe width="100%" height="500" src="https://www.youtube.com/watch?v=gcrv0VpAQRI&feature=youtu.be" frameborder="0" allowfullscreen></iframe>
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/gcrv0VpAQRI?si=tuPcFssnpYuF80Bh" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <h3>Final Video</h3>
 <div class="iframe-container">
-    <iframe width="100%" height="500" src="https://www.youtube.com/watch?v=Hir3TNHPba0" frameborder="0" allowfullscreen></iframe>
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/Hir3TNHPba0?si=GUisN2kMNrN7KwHL" frameborder="0" allowfullscreen></iframe>
 </div>
