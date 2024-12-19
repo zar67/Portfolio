@@ -4,12 +4,13 @@ title:  "Angry Birds"
 icon: "AngryBirds/angry-birds.jpg"
 date:   2019-04-11 10:00:00 +0000
 publish: true
+project-type: student
 software-used: "CLion, GitKraken, GitHub"
 languages-used: C++
 code-repository: <a href="https://github.com/zar67/ESD-angry-birds" target="_blank">GitHub</a>
 textures: <a href="https://www.kenney.nl/" target="_blank">Kenney</a>
 download-location: <a href="https://zoerowbotham.itch.io/angry-birds" target="_blank">zoerowbotham.itch.io</a>
-tags: [Student Project, ESD, Angry Birds, Coursework, C++]
+tags: [ESD, Angry Birds, Coursework, C++]
 ---
 
 <img src="{{ site.baseurl }}/assets/AngryBirds/angry-birds-game.jpg"/>

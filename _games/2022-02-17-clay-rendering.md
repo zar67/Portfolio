@@ -4,10 +4,12 @@ title: "Clay Rendering"
 icon: "ClayRendering/icon.png"
 date: 2022-02-17 12:00:00 +0000
 publish: true
-software-used: "Unity, Visual Studio"
+project-type: student
+software-used: "Visual Studio"
+game-engine-used: "Unity"
 languages-used: ShaderLab
 code-repository: <a href="https://github.com/zar67/AT-clay-rendering" target="_blank">GitHub</a>
-tags: [Student Project, AT, Coursework, Unity, ShaderLab]
+tags: [AT, Coursework, Unity, ShaderLab]
 ---
 
 As part of my third year of university I was tasked with creating a realistic clay shader, the task was suggested by Aardman Animations to develop a way to create a realistic clay material for use in digital claymation. 

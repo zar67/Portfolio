@@ -4,12 +4,13 @@ title:  "Space Invaders"
 icon: "SpaceInvaders/space-invaders.jpg"
 date:   2019-04-01 10:00:00 +0000
 publish: true
+project-type: student
 software-used: "CLion, GitKraken, GitHub"
 languages-used: C++
 textures: <a href="https://www.kenney.nl/" target="_blank">Kenney</a>
 code-repository: <a href="https://github.com/zar67/ESD-invaders-of-the-earth" target="_blank">GitHub</a>
 download-location: <a href="https://zoerowbotham.itch.io/spaceinvaders" target="_blank">zoerowbotham.itch.io</a>
-tags: [Student Project, ESD, Space Invaders, C++]
+tags: [ESD, Space Invaders, C++]
 ---
 
 In order to help me learn C++ in my first year of university, I recreated the popular game Space Invaders. In the game, alien ships move downwards towards the player. In order to win the game, the player has to shoot all of the ships. However, if the ships get too close or the player gets shot, it's game over and Earth is taken over by aliens...

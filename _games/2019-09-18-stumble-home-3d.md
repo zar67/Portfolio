@@ -3,12 +3,14 @@ layout: game
 title:  "Stumble Home 3D"
 icon: "StumbleHome3D/stumble-home-3D.png"
 date:   2019-09-18 10:00:00 +0000
-publish: true
-software-used: "Unity, Visual Studio"
+publish: false
+project-type: personal
+software-used: "Visual Studio"
+game-engine-used: "Unity"
 languages-used: C#
 textures: <a href="https://www.kenney.nl/" target="_blank">Kenney</a>
 download-location: <a href="https://zoerowbotham.itch.io/stumble-home-3d" target="_blank">zoerowbotham.itch.io</a>
-tags: [Personal Project, Unity, C#]
+tags: [Unity, C#]
 ---
 
 I remade Stumble Home in order to improve my 3D Unity skills. I had only dabbled in making 2D games before then so this was my first real try in 3D apart from some small coursework projects.

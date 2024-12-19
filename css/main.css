@@ -215,7 +215,6 @@ pre {
   border-radius: 5px;
   z-index: 1;
   padding: 5px; }
-
 .sub-nav .sub-page-link {
   display: none;
   color: #eeeeee;
@@ -225,10 +224,8 @@ pre {
   .sub-nav .sub-page-link:hover {
     color: #4ecca3;
     transition: all 0.5s ease-out; }
-
 .sub-nav:hover .sub-nav-content {
   display: block; }
-
 .sub-nav:hover .sub-page-link {
   display: block; }
 
@@ -315,10 +312,11 @@ pre {
       width: 30%; }
 
 .post-meta {
-  font-size: 18px;
+  font-size: 13.5px;
   text-align: center;
-  color: #4ecca3;
-  margin-bottom: 0; }
+  font-weight: bold;
+  color: #eeeeee;
+  margin-bottom: 10px; }
 
 .post-link {
   text-transform: capitalize;
@@ -381,7 +379,22 @@ pre {
         transform: translate(-50%, -50%);
         text-align: center;
         font-style: normal; }
-
+      .games .games-list .games-link .games-overlay .games-info {
+        margin: 0;
+        position: absolute;
+        bottom: 25%;
+        left: 50%;
+        display: inline-flex;
+        transform: translate(-50%, 100%);
+        text-align: center;
+        font-style: normal; }
+      .games .games-list .games-link .games-overlay .games-info-item {
+        flex: auto;
+        margin: 5px;
+        color: #eeeeee;
+        background: #232931;
+        border-radius: 10px;
+        padding: 5px; }
 @media screen and (max-width: 650px) {
   .games {
     display: block;
@@ -702,3 +715,5 @@ pre {
     color: #F1F2F3; }
   .highlight .il {
     color: #FFCD22; }
+
+/*# sourceMappingURL=main.css.map */

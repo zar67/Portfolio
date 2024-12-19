@@ -224,10 +224,11 @@
 }
 
 .post-meta {
-    font-size: $base-font-size;
+    font-size: $small-font-size;
     text-align: center;
-    color: $brand-color;
-    margin-bottom: 0;
+    font-weight: bold;
+    color: $text-color;
+    margin-bottom: 10px;
 }
 
 .post-link {
@@ -310,6 +311,26 @@
                     transform: translate(-50%, -50%);
                     text-align: center;
                     font-style: normal;
+                }
+
+                .games-info {
+                    margin: 0;
+                    position: absolute;
+                    bottom: 25%;
+                    left: 50%;
+                    display: inline-flex;
+                    transform: translate(-50%, 100%);
+                    text-align: center;
+                    font-style: normal;
+                }
+
+                .games-info-item {
+                    flex: auto;
+                    margin: 5px;
+                    color: $text-color;
+                    background: $background-color;
+                    border-radius: 10px;
+                    padding: 5px;
                 }
             }
         }

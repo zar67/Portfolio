@@ -8,6 +8,12 @@ layout: default
     <p class="games-meta-date"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
     
     <table class="post-features">
+      {% if page.game-engine-used != nil %}
+      <tr>
+          <th>Game Engine:</th>
+          <td>{{page.game-engine-used}}</td>
+      </tr>
+      {% endif %}
       {% if page.languages-used != nil %}
       <tr>
           <th>Language:</th>

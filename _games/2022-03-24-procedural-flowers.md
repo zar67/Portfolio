@@ -4,10 +4,12 @@ title: "Procedural Flowers"
 icon: "ProceduralFlowers/icon.png"
 date: 2022-03-24 12:00:00 +0000
 publish: true
-software-used: "Unity, Visual Studio"
+project-type: student
+software-used: "Visual Studio"
+game-engine-used: "Unity"
 languages-used: C#
 code-repository: <a href="https://github.com/zar67/AT-procedural-generation" target="_blank">GitHub</a>
-tags: [Student Project, AT, Coursework, Unity]
+tags: [AT, Coursework, Unity]
 ---
 
 <img src="{{ site.baseurl }}/assets/ProceduralFlowers/flower-field.png"/>

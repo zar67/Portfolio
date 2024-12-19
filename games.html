@@ -1,20 +1,87 @@
 ---
 layout: page
-title: Projects
+title: Professional Projects
 ---
 
 <div class="games">
   <ul class="games-list">
     {% for game in site.games reversed %}
       {% if game.publish == true %}
-        <li class="games-container">
-          <img src="{{site.baseurl}}/assets/{{game.icon}}" class="games-image">
-          <a class="games-link" href="{{site.baseurl}}{{ game.url }}">
-            <div class="games-overlay">
-              <h2 class="games-heading">{{game.title}}</h2>
-            </div>
-          </a>
-        </li>
+        {% if game.project-type == "professional" %}
+          <li class="games-container">
+            <img src="{{site.baseurl}}/assets/{{game.icon}}" class="games-image">
+            <a class="games-link" href="{{site.baseurl}}{{ game.url }}">
+              <div class="games-overlay">
+                <h2 class="games-heading">{{game.title}}</h2>
+                <div class="games-info">
+                  {% if game.game-engine-used %}
+                    <p class="games-info-item">{{game.game-engine-used}}</p>
+                  {% endif %}
+                  {% if game.languages-used %}
+                    <p class="games-info-item">{{game.languages-used}}</p>
+                  {% endif %}
+                </div>
+              </div>
+            </a>
+          </li>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+
+<h1 class="page-heading">Personal Projects</h1><br>
+<div class="games">
+  <ul class="games-list">
+    {% for game in site.games reversed %}
+      {% if game.publish == true %}
+        {% if game.project-type == "personal" %}
+          <li class="games-container">
+            <img src="{{site.baseurl}}/assets/{{game.icon}}" class="games-image">
+            <a class="games-link" href="{{site.baseurl}}{{ game.url }}">
+              <div class="games-overlay">
+                <h2 class="games-heading">{{game.title}}</h2>
+                <div class="games-info">
+                  {% if game.game-engine-used %}
+                    <p class="games-info-item">{{game.game-engine-used}}</p>
+                  {% endif %}
+                  {% if game.languages-used %}
+                    <p class="games-info-item">{{game.languages-used}}</p>
+                  {% endif %}
+                </div>
+              </div>
+            </a>
+          </li>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+
+<h1 class="page-heading">Student Projects</h1><br>
+
+<div class="games">
+  <ul class="games-list">
+    {% for game in site.games reversed %}
+      {% if game.publish == true %}
+        {% if game.project-type == "student" %}
+          <li class="games-container">
+            <img src="{{site.baseurl}}/assets/{{game.icon}}" class="games-image">
+            <a class="games-link" href="{{site.baseurl}}{{ game.url }}">
+              <div class="games-overlay">
+                <h2 class="games-heading">{{game.title}}</h2>
+                <div class="games-info">
+                  {% if game.game-engine-used %}
+                    <p class="games-info-item">{{game.game-engine-used}}</p>
+                  {% endif %}
+                  {% if game.languages-used %}
+                    <p class="games-info-item">{{game.languages-used}}</p>
+                  {% endif %}
+                </div>
+              </div>
+            </a>
+          </li>
+        {% endif %}
       {% endif %}
     {% endfor %}
   </ul>

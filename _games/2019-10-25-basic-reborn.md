@@ -4,11 +4,12 @@ title:  "Basic Reb0rn"
 date:   2019-10-25 10:00:00 +0000
 icon: "BasicReb0rn/icon.png"
 publish: true
+project-type: student
 software-used: "CLion, GitKraken, GitHub"
 languages-used: C++
 code-repository: <a href="https://github.com/zar67/LLP-basic-reb0rn" target="_blank">GitHub</a>
 devlog-title: 2019-10-01-basic-reborn
-tags: [Student Project, LLP, BASIC, Coursework, C++]
+tags: [LLP, BASIC, Coursework, C++]
 ---
 
 <video controls>

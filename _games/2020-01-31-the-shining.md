@@ -5,12 +5,13 @@ icon: "TheShining/Danny.png"
 date:   2020-01-31 10:00:00 +0000
 description: My second piece of coursework for my second year at university. A 2D rogue-like game inspired by the movie The Shining.
 publish: true
+project-type: student
 software-used: "CLion, GitKraken, GitHub"
 languages-used: C++
 code-repository: <a href="https://github.com/zar67/LLP-the-shining" target="_blank">GitHub</a>
 textures: "Zoe Rowbotham, Thomas Maddams"
 devlog-title: 2019-11-08-the-shining
-tags: [Student Project, LLP, The Shining, Coursework, C++, Group Project]
+tags: [LLP, The Shining, Coursework, C++, Group Project]
 ---
 
 <img src="{{ site.baseurl }}/assets/TheShining/the_shining_poster.jpg"/>

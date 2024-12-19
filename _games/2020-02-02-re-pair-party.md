@@ -4,7 +4,9 @@ title:  "Re-Pair Party"
 icon: "Re-Pair-Party/logo.png"
 date:   2020-02-02 10:00:00 +0000
 publish: true
-software-used: "Unity, Aesprite, Visual Studio, GitKraken, GitHub"
+project-type: personal
+software-used: "Aesprite, Visual Studio, GitKraken, GitHub"
+game-engine-used: "Unity"
 languages-used: C#
 code-repository: <a href="https://github.com/zar67/GGJ-2020-re-pair-party" target="_blank">GitHub</a>
 textures: "Luke Eyre"
