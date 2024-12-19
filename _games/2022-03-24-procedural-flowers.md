@@ -27,3 +27,8 @@ Some examples of the parameters can be seen in the following image, but the full
 <img src="{{ site.baseurl }}/assets/ProceduralFlowers/parameters-example.png"/>
 
 More information in how I developed the tool can be found in the video logs <a href="https://youtube.com/playlist?list=PLFrr5q99QVCgQ9nvAoHRC83NKl4EfjXSu" target="_blank">here</a>.
+
+Here is the showreel video for my Advanced Technology module which includes this project:
+<div class="iframe-container">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/mSP73pqTBzw?si=9Rcm0D7AMOSqAF5B" frameborder="0" allowfullscreen></iframe>
+</div>

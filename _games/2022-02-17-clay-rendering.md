@@ -25,3 +25,8 @@ More information in how I developed the game can be found in the video logs <a h
 The final report of the project can be found <a href="{{site.baseurl}}/assets/ClayRendering/ClayRendering-Report.pdf" target="_blank">here</a>.
 
 <img src="{{ site.baseurl }}/assets/ClayRendering/torus-material.png"/>
+
+Here is the showreel video for my Advanced Technology module which includes this project:
+<div class="iframe-container">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/mSP73pqTBzw?si=9Rcm0D7AMOSqAF5B" frameborder="0" allowfullscreen></iframe>
+</div>

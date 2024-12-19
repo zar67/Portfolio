@@ -29,3 +29,8 @@ Due to previous coursework projects in previous years, I knew how to structure m
 
 <br>
 The final report of the project can be found <a href="{{site.baseurl}}/assets/DirectXFPS/DirectX-Report.pdf" target="_blank">here</a>.
+
+Here is the showreel video for my Advanced Technology module which includes this project:
+<div class="iframe-container">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/mSP73pqTBzw?si=9Rcm0D7AMOSqAF5B" frameborder="0" allowfullscreen></iframe>
+</div>
