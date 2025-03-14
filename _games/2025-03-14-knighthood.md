@@ -2,7 +2,7 @@
 layout: game
 title: "Knighthood"
 icon: "Knighthood/icon.png"
-date: 2025-03-14 12:00:00 +0000
+date: 2025-03-13 12:00:00 +0000
 publish: true
 project-type: professional
 software-used: "Android Studio, XCode"
