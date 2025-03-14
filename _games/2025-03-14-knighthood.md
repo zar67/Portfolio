@@ -18,4 +18,4 @@ More information about the game can be found [here](https://www.midoki.com/knigh
 <iframe width="100%" height="500" src="https://www.youtube.com/embed/KQDxLhedcNk?si=GahCSuwxVPGdd1Yk" frameborder="0" allowfullscreen></iframe>
 </div>
 
-During my time on the project I worked on various bugs, crashes and ANRs within the game itself and in their [MDK technology](https://www.midoki.com/mdk.html). I also added a few new libraries and tool to help detect and reduce crashes.
+During my time on the project I worked on various bugs, crashes and ANRs within the game itself and in their [MDK technology](https://www.midoki.com/mdk.html). I also added a few new libraries and tools to help detect and reduce crashes.
