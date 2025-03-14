@@ -5,6 +5,9 @@ icon: "Knighthood/icon.png"
 date: 2025-03-14 12:00:00 +0000
 publish: true
 project-type: professional
+software-used: "Android Studio, XCode"
+game-engine-used: "MDK"
+languages-used: C++,Java
 tags: [Sumo, Midoki]
 ---
 
